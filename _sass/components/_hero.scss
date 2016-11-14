@@ -1,0 +1,156 @@
+/*1.1 Hero */
+.hero {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  position: relative;
+  color: #fff;
+}
+#img-back{
+  position:relative;width:100%;
+  height:100%;
+  overflow: hidden;
+}
+#img-back:after{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('http://placehold.it/1920x1080');
+  background-size: cover;
+  background-attachment: fixed;
+}
+.cnt-hero-content{
+  padding:0px 0px 400px 0px;
+  background-color: rgba(36, 42, 50, 0.8) ;
+  background-size:cover;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-box{
+  text-align: center;
+  position: relative;
+  top:250px;
+}
+.hero-text h1,
+.hero-text p{
+  line-height:1em;
+  color: #fff;
+}
+
+.hero-text h1{
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 1em;
+  margin: 0 0 15px;
+}
+.hero-text p{
+  font-family: 'Open Sans',sans-serif;
+  line-height: 3em;
+  font-size: 1.8rem;
+  font-weight: 100;
+  margin: 0 0 80px;
+}
+.cnt-hero-content .action-main {
+  display: inline-block;
+}
+.cnt-hero-content .action-main::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.cnt-hero-content .action-main > * {
+  float: left;
+}
+.cnt-hero-content .cnt-btn {
+  display: inline-block;
+  padding: 1.8em 6em;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Montserrat',sans-serif;
+  letter-spacing: 1px;
+  -webkit-border-radius: 6em;
+  -moz-border-radius: 6em;
+  -ms-border-radius: 6em;
+  -o-border-radius: 6em;
+  border-radius: 6em;
+  -o-transition: all 0.218s;
+  -moz-transition: all 0.218s;
+  -webkit-transition: all 0.218s;
+  transition: all 0.218s;
+}
+.cnt-hero-content .cnt-btn:hover{
+  background-color: transparent;
+}
+.cnt-hero-content .cnt-btn a{
+  color:#fff;
+  text-decoration:none;
+}
+.cnt-hero-content .cnt-btn a:hover{
+  text-decoration:none;
+  color: inherit;
+}
+
+.hero .wheel-wrap {
+  bottom: -90px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero .wheel-wrap span.mousewheel {
+  border: 2px solid #FFF;
+  border-radius: 12px;
+  display: inline-block;
+  width:25px;
+  height:40px;
+  position: relative;
+
+}
+
+.hero .wheel-wrap span.mousewheel:after {
+  background: #FFF;
+  border-radius: 6px;
+  content: '';
+  height: 7px;
+  left: 8px;
+  top: 5px;
+  position: absolute;
+  width: 5px;
+  -webkit-animation:scroll-inner 1.5s;
+  animation:scroll-inner 1.5s;
+  -webkit-animation-timing-function:ease;
+  animation-timing-function:ease;
+  -webkit-animation-iteration-count:infinite;
+  animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes scroll-inner{
+  from{
+    margin-top:15%;
+    opacity:1;
+  }
+  to{
+    margin-top:75%;
+    opacity:0;
+  }
+}@keyframes scroll-inner{
+  from
+  {
+    margin-top:15%;
+    opacity:1;
+  }
+  to{
+    margin-top:75%;
+    opacity:0;
+  }
+}

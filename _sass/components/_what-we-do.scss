@@ -1,0 +1,105 @@
+/*1.2 Services */
+#services{
+  position:relative;
+  width:100%;
+  top:-10px;
+  z-index:3;
+
+}
+#services .container{
+  width:100%;
+  padding: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#services .container .row{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.cnt-services-bg{
+  padding: 0px 0px 80px 0px;
+}
+#services .container h1{
+  text-align: center;
+  font-family: 'Open Sans',sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: 0px;
+  margin-top: 5%;
+  color: #3c3c4e;
+}
+#services .container p.title-txt{
+  font-family: 'Open Sans',sans-serif;
+  font-size: 4rem;
+  font-weight: 100;
+  text-align: center;
+  width: 50%;
+  margin: 50px auto;
+}
+#services .item-container{
+  position: relative;
+  margin:2% 0 0 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+#services .item-services{
+  margin-left: 2.5%;
+  text-align: center;
+  width: 30%;
+
+}
+#services p.items{
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.8rem;
+  color: #9f9f9f;
+  margin-top: 5%;
+  position: relative;
+  width: 100%;
+}
+#services .item-services h2{
+  font-size: 1.8rem;
+  font-weight: 800;
+  top: 10px;
+  position: relative;
+  font-family:'Montserrat',sans-serif;
+  color: #323f4d;
+}
+#services i{
+  font-size: 6rem;
+}
+.item-container .item-services:nth-child(3n+2){
+  margin-top: 60px;
+}
+#services .action-started{
+  position: relative;
+  text-align: center;
+  margin: 50px auto;
+}
+#services .btn{
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#services .btn:hover{
+  background: #34495e;
+}
+#services .btn-outlined{
+  height: 60px;
+  line-height: 60px;
+  border-radius: 60px;
+  font-weight: 700;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+  font-size:1.2rem;
+  padding: 0 35px;
+  min-width: 250px;
+}
+#services .btn-outlined:hover{
+  color: #fff;
+}

@@ -1,0 +1,52 @@
+
+/* 14.2 All Services*/
+#benefits{
+  position:relative;
+  width:100%;
+  top:-10px;
+  z-index:3;
+}
+#benefits .container{
+  width:100%;
+  padding: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#benefits .container .row{
+  width: 100%;
+}
+.cnt-benefits-bg{
+  padding: 0px 0px 100px 0px;
+  border-bottom: 1px solid #dbdfdd;
+}
+#benefits .container .main-services-content{
+  position: relative;
+  margin-top:5%;
+  padding-left:10%;
+}
+#benefits .container h1{
+  text-align: center;
+  font-family: 'Open Sans',sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: 0px;
+  margin-top: 5%;
+  color: #3c3c4e;
+}
+#benefits .item-all-services{
+  margin-left: 0px;
+  text-align: center;
+  width: 30%;
+}
+#benefits p.items{
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.5rem;
+  color: #9f9f9f;
+  width: 100%;
+  text-align: left;
+}
+
+#benefits i{
+  font-size: 4rem;
+}
