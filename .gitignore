@@ -1,0 +1,10 @@
+public
+.sass-cache
+.asset-cache
+.jekyll-metadata
+node_modules
+*.old
+.env
+node_modules
+bower_components
+buildkite*
