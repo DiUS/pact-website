@@ -19,7 +19,6 @@ case $JEKYLL_ENV in
     ;;
   * )
     echo 'staging build'
-    curl --basic -u api_user:hvyuVplCKDXJdD4p5ap6UyE7 -g https://user-admin.dius.com.au/api/users > _data/active_people.json
     jekyll build --trace --incremental --future --unpublished
     ;;
 esac
