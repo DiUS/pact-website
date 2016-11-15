@@ -9,6 +9,8 @@
 
 @import "./variables";
 @import "components/base";
+@import "components/color";
+
 @import "components/header";
 @import "components/hero";
 @import "components/what-we-do";
@@ -16,7 +18,7 @@
 @import "components/services";
 // @import "components/page";
 @import "components/footer";
-
+@import "../assets/theme_css/pe-icon-7-stroke.css"
 
 // @import "./vendor/assets/bootstrap.min.css";
 

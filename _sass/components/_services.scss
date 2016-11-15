@@ -1,112 +1,112 @@
-/* 14.5 Showcase */
-#showcase{
-position:relative;
-width:100%;
-top:-10px;
-z-index:3;
+#services{
+  position:relative;
+  width:100%;
+  top:-10px;
+  z-index:3;
+  border-bottom: 1px solid #dbdfdd;
 }
-#showcase .container{
-width:100%;
-padding: 0;
-margin-left: 0px;
-margin-right: 0px;
+#services .container{
+  width:100%;
+  padding: 0;
+  margin-left: 0px;
+  margin-right: 0px;
 }
-.cnt-showcase-bg {
-padding: 0px 0px 100px 0px;
+.cnt-services-bg {
+  padding: 0px 0px 100px 0px;
 }
-#showcase .container h1{
-text-align: center;
-font-family: 'Open Sans',sans-serif;
-text-transform: uppercase;
-font-weight: 800;
-font-size: 3rem;
-letter-spacing: 0px;
-margin-top: 5%;
-color: #3c3c4e;
+#services .container h1{
+  text-align: center;
+  font-family: 'Open Sans',sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: 0px;
+  margin-top: 5%;
+  color: #3c3c4e;
 }
-#showcase .container p{
-font-family: 'Open Sans',sans-serif;
-font-size: 1.8rem;
-font-weight: 100;
-text-align: center;
-width: 40%;
-margin: 2% auto;
-color: #9f9f9f;
+#services .container p{
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.8rem;
+  font-weight: 100;
+  text-align: center;
+  width: 40%;
+  margin: 2% auto;
+  color: #9f9f9f;
 }
-#showcase .showcase-content{
-padding-left: 40px;
+#services .services-content{
+  padding-left: 40px;
 }
-#showcase .showcase-img{
+#services .services-img{
 
 }
-#showcase .showcase-content h2{
-font-family: 'Open Sans',sans-serif;
-font-weight: 100;
-font-size: 3rem;
-text-align: left;
-width: 80%;
-position: relative;
-top: 45px;
+#services .services-content h2{
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  text-align: left;
+  width: 80%;
+  position: relative;
+  top: 45px;
 }
-#showcase .showcase-content p{
-font-family: 'Open Sans',sans-serif;
-font-size: 1.5rem;
-font-weight: 400;
-color: #9f9f9f;
-width: 80%;
-position: relative;
-margin-left: 0px;
-top: 45px;
-text-align: left;
+#services .services-content p{
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #9f9f9f;
+  width: 80%;
+  position: relative;
+  margin-left: 0px;
+  top: 45px;
+  text-align: left;
 }
-#showcase .showcase-content ul.showcase-list{
-list-style: none;
-position: relative;
-margin-top: 10%;
-font-size: 1.5rem;
-font-family: 'Open Sans',sans-serif;
-color: #182a3c;
-line-height: 1.8em ;
+#services .services-content ul.services-list{
+  list-style: none;
+  position: relative;
+  margin-top: 10%;
+  font-size: 1.5rem;
+  font-family: 'Open Sans',sans-serif;
+  color: #182a3c;
+  line-height: 1.8em ;
 }
-#showcase .showcase-content ul.showcase-list li{
-position: relative;
+#services .services-content ul.services-list li{
+  position: relative;
 }
-#showcase .showcase-content ul.showcase-list li span{
-position: relative;
-padding-left: 15px;
+#services .services-content ul.services-list li span{
+  position: relative;
+  padding-left: 15px;
 }
-#showcase .showcase-content ul.showcase-list li i{
-font-size: 2.5rem;
-position: relative;
-top: 5px;
-margin-left: 0;
+#services .services-content ul.services-list li i{
+  font-size: 2.5rem;
+  position: relative;
+  top: 5px;
+  margin-left: 0;
 }
-#showcase .action-started{
-position: relative;
-text-align: left;
-margin: 50px auto;
-z-index: 2;
+#services .action-started{
+  position: relative;
+  text-align: left;
+  margin: 50px auto;
+  z-index: 2;
 }
-#showcase .btn{
-text-overflow: ellipsis;
-vertical-align: middle;
-display: inline-block;
-white-space: nowrap;
-overflow: hidden;
+#services .btn{
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
 }
-#showcase .btn:hover{
-background: #34495e;
+#services .btn:hover{
+  background: #34495e;
 }
-#showcase .btn-outlined{
-height: 60px;
-line-height: 60px;
-border-radius: 60px;
-font-weight: 700;
-font-family: 'Montserrat',sans-serif;
-text-transform: uppercase;
-font-size:1.2rem;
-padding: 0 35px;
-min-width: 250px;
--webkit-transition: .3s ease;
-transition: .3s ease;
+#services .btn-outlined{
+  height: 60px;
+  line-height: 60px;
+  border-radius: 60px;
+  font-weight: 700;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+  font-size:1.2rem;
+  padding: 0 35px;
+  min-width: 250px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }

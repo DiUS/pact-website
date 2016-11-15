@@ -1,28 +1,27 @@
-/*1.2 Services */
-#services{
+#what-we-do{
   position:relative;
   width:100%;
   top:-10px;
   z-index:3;
-
+  border-bottom: 1px solid #dbdfdd;
 }
-#services .container{
+#what-we-do .container{
   width:100%;
   padding: 0;
   margin-left: 0px;
   margin-right: 0px;
 }
-#services .container .row{
+#what-we-do .container .row{
   width: 100%;
   margin-left: 0;
   margin-right: 0;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-.cnt-services-bg{
+.cnt-what-we-do-bg{
   padding: 0px 0px 80px 0px;
 }
-#services .container h1{
+#what-we-do .container h1{
   text-align: center;
   font-family: 'Open Sans',sans-serif;
   text-transform: uppercase;
@@ -32,7 +31,7 @@
   margin-top: 5%;
   color: #3c3c4e;
 }
-#services .container p.title-txt{
+#what-we-do .container p.title-txt{
   font-family: 'Open Sans',sans-serif;
   font-size: 4rem;
   font-weight: 100;
@@ -40,19 +39,19 @@
   width: 50%;
   margin: 50px auto;
 }
-#services .item-container{
+#what-we-do .item-container{
   position: relative;
   margin:2% 0 0 0;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-#services .item-services{
+#what-we-do .item-what-we-do{
   margin-left: 2.5%;
   text-align: center;
   width: 30%;
 
 }
-#services p.items{
+#what-we-do p.items{
   font-family: 'Open Sans',sans-serif;
   font-size: 1.8rem;
   color: #9f9f9f;
@@ -60,7 +59,7 @@
   position: relative;
   width: 100%;
 }
-#services .item-services h2{
+#what-we-do .item-what-we-do h2{
   font-size: 1.8rem;
   font-weight: 800;
   top: 10px;
@@ -68,28 +67,28 @@
   font-family:'Montserrat',sans-serif;
   color: #323f4d;
 }
-#services i{
+#what-we-do i{
   font-size: 6rem;
 }
-.item-container .item-services:nth-child(3n+2){
+.item-container .item-what-we-do:nth-child(3n+2){
   margin-top: 60px;
 }
-#services .action-started{
+#what-we-do .action-started{
   position: relative;
   text-align: center;
   margin: 50px auto;
 }
-#services .btn{
+#what-we-do .btn{
   text-overflow: ellipsis;
   vertical-align: middle;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
 }
-#services .btn:hover{
+#what-we-do .btn:hover{
   background: #34495e;
 }
-#services .btn-outlined{
+#what-we-do .btn-outlined{
   height: 60px;
   line-height: 60px;
   border-radius: 60px;
@@ -100,6 +99,6 @@
   padding: 0 35px;
   min-width: 250px;
 }
-#services .btn-outlined:hover{
+#what-we-do .btn-outlined:hover{
   color: #fff;
 }
