@@ -15,7 +15,8 @@ MAIN COLOR:#32B8E9; (blue)
   }
   #services, #what-we-do {
     .container p.title-txt,
-    .container h1 {
+    .container h1,
+    .container h2 {
       color: $dark-blue;
     }
   }
