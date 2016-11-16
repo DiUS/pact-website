@@ -40,6 +40,11 @@ MAIN COLOR:#32B8E9; (blue)
   .btn-primary {
     background-color: $orange;
   }
+
+  .cnt-contact-bg .data-contact {
+    border-top: 15px solid $orange;
+    border-bottom: 15px solid $orange;
+  }
 }
 // .template-color-pact .cnt-hero-content .cnt-btn,
 // .template-color-pact #services .btn-outlined:hover,
