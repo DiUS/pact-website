@@ -12,7 +12,7 @@ MAIN COLOR:#32B8E9; (blue)
 
   .cnt-hero-content .cnt-btn,
   .cnt-hero-content .cnt-btn:hover,
-  .hero-contact .btn-outlined,
+  .cnt-hero-content .btn-outlined,
   {
     border: 2px solid $orange;
 
@@ -40,6 +40,10 @@ MAIN COLOR:#32B8E9; (blue)
 
   .btn-primary {
     background-color: $orange;
+  }
+
+  .btn-secondary{
+    background-color: $cyan-blue;
   }
 
   .cnt-contact-bg .data-contact {
