@@ -1,0 +1,129 @@
+#terms{
+position:relative;
+width:100%;
+top:0px;
+z-index:3;
+
+}
+#terms .container{
+width:100%;
+padding: 0;
+margin-left: 0px;
+margin-right: 0px;
+}
+#terms .cnt-privacy-bg{
+padding:0px 0px 100px 0px;
+}
+#terms .cnt-terms{
+position:relative;
+margin-top:5%;
+}
+#terms h3{
+font-family: 'Open Sans',sans-serif;
+font-size: 2rem;
+padding-bottom: 10px;
+padding-top: 10px;
+color: #34495e;
+}
+#terms h2{
+font-family: 'Open Sans',sans-serif;
+font-size: 1.6rem;
+padding-bottom: 10px;
+padding-top: 10px;
+color: #34495e;
+}
+#terms p{
+font-family: 'Open Sans',sans-serif;
+font-size: 1.5rem;
+color: #9f9f9f;
+line-height: 1.6em;
+}
+#terms ol,
+#terms ul
+{
+font-family: 'Open Sans',sans-serif;
+padding: 0;
+margin-left: 20px;
+font-style: italic;
+padding-top: 20px;
+padding-bottom: 20px;
+font-size: 1.5rem;
+font-weight: 400;
+}
+#terms ul li span{
+color: #34495e;
+}
+#terms ol li span{
+color: #34495e;
+}
+#terms .terms-btns {
+display: inline-block;
+position: relative;
+margin: 0px auto;
+text-align: center;
+top: 50px;
+width: 100%;
+}
+#terms  .terms-btns::after {
+clear: both;
+content: "";
+display: table;
+}
+#terms .terms-cnt{
+position: relative;
+margin-top: 5%;
+}
+#terms .terms-cnt h2{
+font-family: 'Montserrat',sans-serif;
+text-align: center;
+color: #9f9f9f;
+}
+#terms  .cnt-btn {
+display: inline-block;
+margin-right: 1.5em;
+bottom:20px;
+position: relative;
+-webkit-border-radius: 60px;
+-moz-border-radius: 60px;
+-ms-border-radius: 60px;
+-o-border-radius: 60px;
+border-radius: 60px;
+font-weight: 800;
+font-family: 'Montserrat',sans-serif;
+letter-spacing: .04em;
+font-size: 1.4rem;
+padding: 1.2em 6em;
+min-width: 140px;
+border: 2px solid #fff;
+text-decoration: none;
+-webkit-transition: 0.3s all ease;
+-moz-transition: 0.3s all ease;
+-o-transition: 0.3s all ease;
+-ms-transition: 0.3s all ease;
+transition: 0.3s all ease;
+}
+#terms .cnt-btn.accept{
+border: 2px solid #3AB54A;
+color: #3AB54A;
+}
+#terms .cnt-btn.accept:hover{
+border: 2px solid #3AB54A;
+color: #fff;
+background: #3AB54A;
+}
+#terms .cnt-btn.decline{
+border: 2px solid #EF4545;
+color: #EF4545;
+}
+#terms .cnt-btn.decline:hover{
+border: 2px solid #EF4545;
+color: #fff;
+background: #EF4545;
+}
+#terms .cnt-btn:nth-of-type(2) {
+margin-right: 0;
+}
+.cnt-btn a{
+color:#fff;
+text-decoration:none;
+}

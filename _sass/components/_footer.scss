@@ -88,49 +88,16 @@ footer ul li {
   padding-bottom: 2rem;
   background: $dark-blue;
 }
-// .footer-contact{
-//   background: #182a3c;
-// }
-// .footer-main ul {
-//   font-size: 1.2rem;
-// }
-// .footer-main ul li {
-//   font-family: "Open Sans", sans-serif;
-//   font-weight: 100;
-//   text-transform: uppercase;
-//   letter-spacing: 2px;
-//   list-style: none;
-// }
-// .footer-main ul a, .footer-main ul a:visited {
-//   color: #bababa;
-// }
-// .footer-main ul a:hover, .footer-main ul a:focus {
-//   text-decoration: none;
-// }
-// .footer-main .footer-logo {
-//   width: 200px;
-//   height: 40px;
-//   background: url("../../assets/img/logo-light.svg") no-repeat center;
-//   background-size: 200px 40px;
-//   margin: -.6rem 0 2.1rem -.3rem;
-//   display: block;
-// }
-// .footer-main .footer-subscribe p {
-//   margin-bottom: 1.2rem;
-//   font-size: 2.5rem;
-//   color: #bababa;
-//   font-weight: 100;
-//   font-family: 'Open Sans',sans-serif;
-// }
-// .footer-main .footer-subscribe ul.contact{
-//   font-weight: 800;
-//   letter-spacing: normal;
-// }
-//
+
 .footer-bottom {
   margin-top: 0rem;
   height: 50px;
   width: 100%;
+
+  a:hover, a:visited {
+    text-decoration: underline;
+    color: $orange;
+  }
 }
 .footer-bottom-contact{
   height: 40px;
@@ -146,9 +113,7 @@ footer ul li {
 .footer-bottom div{
   display: inline-block;
 }
-// .footer-bottom .copyright span {
-//   display: inline-block;
-// }
+
 .footer-bottom .terms{
   margin-left: 25px;
   font-family: 'Open Sans',sans-serif;
@@ -158,25 +123,7 @@ footer ul li {
   font-size: 1.2rem;
   margin-top: 1.5rem;
 }
-// .footer-bottom .terms span {
-//   display: inline-block;
-// }
-// .footer-bottom .terms span::after {
-//   content: "|";
-//   display: inline-block;
-//   padding: 0 1rem 0 1.2rem;
-//   color: #182a3c;
-// }
-// .footer-bottom .copyright span:last-child::after {
-//   display: none;
-// }
-
-
-// /**
-// * go to top
-// * -
-// */
-//
+// 
 // #go-top {
 //   position: absolute;
 //   top: 12px;
