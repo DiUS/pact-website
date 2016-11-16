@@ -1,10 +1,10 @@
-
-/* 14.2 All Services*/
 #benefits{
   position:relative;
   width:100%;
   top:-10px;
   z-index:3;
+  border-bottom: 1px solid #dbdfdd;
+  background: rgba($cyan-blue, 0.2);
 }
 #benefits .container{
   width:100%;
@@ -12,17 +12,8 @@
   margin-left: 0px;
   margin-right: 0px;
 }
-#benefits .container .row{
-  width: 100%;
-}
-.cnt-benefits-bg{
+.cnt-benefits-bg {
   padding: 0px 0px 100px 0px;
-  border-bottom: 1px solid #dbdfdd;
-}
-#benefits .container .main-services-content{
-  position: relative;
-  margin-top:5%;
-  padding-left:10%;
 }
 #benefits .container h1{
   text-align: center;
@@ -34,19 +25,89 @@
   margin-top: 5%;
   color: #3c3c4e;
 }
-#benefits .item-all-services{
-  margin-left: 0px;
+#benefits .container p{
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.8rem;
+  font-weight: 100;
   text-align: center;
-  width: 30%;
+  width: 40%;
+  margin: 2% auto;
+  color: #9f9f9f;
 }
-#benefits p.items{
+#benefits .benefits-content{
+  padding-left: 40px;
+}
+#benefits .benefits-img{
+
+}
+#benefits .benefits-content h2{
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  text-align: left;
+  width: 80%;
+  position: relative;
+  top: 45px;
+}
+#benefits .benefits-content p{
   font-family: 'Open Sans',sans-serif;
   font-size: 1.5rem;
+  font-weight: 400;
   color: #9f9f9f;
-  width: 100%;
+  width: 80%;
+  position: relative;
+  margin-left: 0px;
+  top: 45px;
   text-align: left;
 }
-
-#benefits i{
-  font-size: 4rem;
+#benefits .benefits-content ul.benefits-list{
+  list-style: none;
+  position: relative;
+  margin-top: 10%;
+  font-size: 1.5rem;
+  font-family: 'Open Sans',sans-serif;
+  color: #182a3c;
+  line-height: 1.8em ;
+}
+#benefits .benefits-content ul.benefits-list li{
+  position: relative;
+}
+#benefits .benefits-content ul.benefits-list li span{
+  position: relative;
+  padding-left: 15px;
+}
+#benefits .benefits-content ul.benefits-list li i{
+  font-size: 2.5rem;
+  position: relative;
+  top: 5px;
+  margin-left: 0;
+}
+#benefits .action-started{
+  position: relative;
+  text-align: left;
+  margin: 50px auto;
+  z-index: 2;
+}
+#benefits .btn{
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#benefits .btn:hover{
+  background: #34495e;
+}
+#benefits .btn-outlined{
+  height: 60px;
+  line-height: 60px;
+  border-radius: 60px;
+  font-weight: 700;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+  font-size:1.2rem;
+  padding: 0 35px;
+  min-width: 250px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
