@@ -1,7 +1,8 @@
 #!/bin/bash
 
-set -e
+set -ex
 
+env 
 # ruby stuff
 source ~/.bashrc
 
