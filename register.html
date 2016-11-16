@@ -2,55 +2,79 @@
 layout: default
 title: home
 ---
-	<section>
-	<div>
 
-		<h2 class="text-center">Register Your Interest for Pact Here</h2>
-
-	<div class="container">
-	<form class="form-horizontal" id="register-form">
-		<div class="form-group">
-		<label class="control-label col-sm-2" for="company_name">Company/Product Name:</label>
-
-			<div class="col-sm-10">
-				<input type="text" class="form-control" id="company_name" placeholder="Company Name ...">
+<section id="hero" class="hero-contact">
+	<div id="particles-js">
+		<div class="cnt-herocontact-content">
+			<div class="hero-box">
+				<div class="container">
+					<div class="hero-text align-center">
+						<h1>Sign Up</h1>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 action-started">
+							<a href="index.html" class="btn btn-outlined">Back to Home</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="form-group">
-		<label class="control-label col-sm-2" for="first_name">First Name:</label>
-			<div class="col-sm-10">
-				<input type="text" class="form-control" id="first_name" placeholder="First Name ...">
-			</div>
-		</div>
-		<div class="form-group">
-		<label class="control-label col-sm-2" for="last_name">Last Name:</label>
-			<div class="col-sm-10">
-				<input type="text" class="form-control" id="last_name" placeholder="Last Name ...">
-			</div>
-		</div>
-		<div class="form-group">
-		<label class="control-label col-sm-2" for="company_url">Company URL:</label>
-			<div class="col-sm-10">
-				<input type="url" class="form-control" id="company_url" placeholder="Company URL ...">
-			</div>
-		</div>
-		
-		<div class="form-group">
-			<label class="control-label col-sm-2" for="email">Email:</label>
-			<div class="col-sm-10">
-				<input type="email" class="form-control" id="email" placeholder="Enter email">
-			</div>
-		</div>
-		
-		<div class="form-group"> 
-			<div class="col-sm-offset-2 col-sm-10">
-				<button type="submit" id="submit-button" class="btn btn-default">Submit</button>
-			</div>
-		</div>
-	</form>
+		<!-- //.cnt-herocontact-content -->
 	</div>
-
-	</div>
-
 </section>
-	
+<section id="contact-sc">
+	<div class="cnt-contact-bg">
+		<div class="container">
+			<!-- contact-me -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="col-xs-12 col-lg-5 contact-me">
+						<h1>SIGN UP NOW</h1>
+						<p class="bottom-txt">We'll keep you updated in our latest information</p>
+						<div id="answers"></div>
+						<form id="register-form" name="register-form" method="post" action="#">
+							<fieldset>
+								<p>
+									<input id="company_name" class="textbox" name="company_name" minlength="2" type="text" placeholder="Company name" tabindex="1" pattern="[a-zA-Z][a-zA-Z0-9\s]*" />
+								</p>
+								<p>
+									<input id="first_name" class="textbox" name="name" minlength="2" type="text" placeholder="First name" required tabindex="1" pattern="[a-zA-Z][a-zA-Z0-9\s]*" title="Please enter your first name" />
+								</p>
+								<p>
+									<input id="last_name" class="textbox" name="name" minlength="2" type="text" placeholder="Last name" required tabindex="1" pattern="[a-zA-Z][a-zA-Z0-9\s]*" title="Please enter your last name" />
+								</p>
+								<p>
+									<input type="email" id="email" name="email" class="textbox" placeholder="Email address" spellcheck="false" required tabindex="2" />
+								</p>
+								<p>
+									<input type="text" id="company_url" name="company_url" class="textbox" placeholder="Company URL" spellcheck="false" required tabindex="2" />
+								</p>
+								<p>
+									<button class="btn btn-lg btn-primary btn-block btn-contact" type="submit">Submit</button>
+								</p>
+							</fieldset>
+						</form>
+					</div>
+					<!-- //.contact-me -->
+					<div class="col-xs-12 col-lg-5 data-contact animated bounce">
+						<div class="col-lg-12">
+							<h2>Find Us</h2>
+							<ul class="data-content">
+								<li class="title-data">Call Us</li>
+								<li class="contact-separator"></li>
+								<li>+(800) 900-200-300</li>
+								<li class="title-data">Write Us</li>
+								<li class="contact-separator"></li>
+								<li>info@yourcompany.com</li>
+								<li class="title-data">Visit Us</li>
+								<li class="contact-separator"></li>
+								<li>121 King St,Melbourne VIC 3000,Australia</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //.row -->
+		</div>
+		<!-- //.container-->
+	</div>
+	<!-- //.cnt-contact-bg -->
+</section>

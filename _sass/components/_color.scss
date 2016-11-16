@@ -10,8 +10,11 @@ MAIN COLOR:#32B8E9; (blue)
     background: $orange;
   }
 
-  .cnt-hero-content .cnt-btn:hover{
-    border: 1px solid $orange;
+  .cnt-hero-content .cnt-btn:hover,
+  .hero-contact .btn-outlined,
+  {
+    border: 2px solid $orange;
+
   }
   #services, #what-we-do {
     .container p.title-txt,
@@ -23,8 +26,19 @@ MAIN COLOR:#32B8E9; (blue)
 
   #benefits .main-services-content .item-all-services,
   #what-we-do .item-what-we-do,
-  .cnt-hero-content .cnt-btn:hover {
+  .cnt-hero-content .cnt-btn:hover,
+  .hero-contact .btn-outlined
+  {
     color: $orange;
+  }
+
+  #register-form input[type="text"]:focus,
+  #register-form input[type="email"]:focus {
+    border-bottom: 2px solid $orange;
+  }
+
+  .btn-primary {
+    background-color: $orange;
   }
 }
 // .template-color-pact .cnt-hero-content .cnt-btn,
