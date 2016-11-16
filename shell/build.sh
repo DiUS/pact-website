@@ -5,6 +5,8 @@ set -e
 # ruby stuff
 source ~/.bashrc
 
+ssh-add ~/.ssh/dius_pact_broker_deployer
+
 # the following commands install jekyll
 rvm use 2.3.0
 bundle
