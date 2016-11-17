@@ -99,9 +99,7 @@ footer ul li {
     color: $orange;
   }
 }
-.footer-bottom-contact{
-  height: 40px;
-}
+
 .footer-bottom .copyright{
   margin-left: 25px;
   font-family: 'Open Sans',sans-serif;
@@ -123,29 +121,29 @@ footer ul li {
   font-size: 1.2rem;
   margin-top: 1.5rem;
 }
-// 
-// #go-top {
-//   position: absolute;
-//   top: 12px;
-//   right:0px;
-//   width: 100%;
-//   display:block;
-// }
-//
-// #go-top a {
-//   text-decoration: none;
-//   border: 0 none;
-//   display: block;
-//   color: #182a3c;
-//   float: right;
-//   text-transform: uppercase;
-//   -moz-transition: all 0.3s ease-in-out;
-//   -o-transition: all 0.3s ease-in-out;
-//   -webkit-transition: all 0.3s ease-in-out;
-//   -ms-transition: all 0.3s ease-in-out;
-//   transition: all 0.3s ease-in-out;
-// }
-// #go-top a i {
-//   font-size: 1.5rem;
-//   line-height: inherit;
-// }
+
+#go-top {
+  position: absolute;
+  bottom: 0px;
+  right:0px;
+  width: 100%;
+  display:block;
+}
+
+#go-top a {
+  text-decoration: none;
+  border: 0 none;
+  display: block;
+  color: $orange;
+  float: right;
+  text-transform: uppercase;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#go-top a i {
+  font-size: 1.5rem;
+  line-height: inherit;
+}
