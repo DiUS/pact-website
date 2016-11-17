@@ -20,11 +20,14 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url('http://media.istockphoto.com/photos/software-developers-picture-id621272078?s=2048x2048');
+  //background:url('http://image.shutterstock.com/z/stock-photo-php-programming-html-coding-cyberspace-concept-345807347.jpg');
+
+  background: url('http://image.shutterstock.com/z/stock-photo-outsource-developer-working-on-marble-desk-working-laptop-computer-mobile-application-software-and-511126300.jpg');
+  //background: url('http://media.istockphoto.com/photos/software-developers-picture-id621272078?s=2048x2048');
   // background: url('http://media.istockphoto.com/photos/software-developers-at-work-picture-id606019764?s=2048x2048');
   // background: url('http://media.istockphoto.com/photos/development-team-cooperating-in-their-office-picture-id510152128?s=2048x2048');
   background-size: cover;
-  background-attachment: fixed;  
+  background-attachment: fixed;
 }
 .cnt-hero-content{
   padding:0px 0px 400px 0px;
