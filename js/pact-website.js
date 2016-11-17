@@ -30,4 +30,9 @@ $('#register-form').submit(function (event) {
   })
 })
 
+
+$('#register-form').on('submit', function(){
+	$(this)[0].reset();
+	alert("Thanks for registering your interest!");
+})
 });

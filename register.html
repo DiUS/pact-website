@@ -34,19 +34,19 @@ permalink: '/register/'
 						<form id="register-form" name="register-form" method="post" action="#">
 							<fieldset>
 								<p>
-									<input id="company_name" class="textbox" name="company_name" minlength="2" type="text" placeholder="Company name" tabindex="1" pattern="[a-zA-Z][a-zA-Z0-9\s]*" />
+									<input id="company_name" class="textbox" name="company_name" minlength="2" type="text" placeholder="Company name" required />
 								</p>
 								<p>
-									<input id="first_name" class="textbox" name="name" minlength="2" type="text" placeholder="First name" required tabindex="1" pattern="[a-zA-Z][a-zA-Z0-9\s]*" title="Please enter your first name" />
+									<input id="first_name" class="textbox" name="name" minlength="2" type="text" placeholder="First name" required title="Please enter your first name" />
 								</p>
 								<p>
-									<input id="last_name" class="textbox" name="name" minlength="2" type="text" placeholder="Last name" required tabindex="1" pattern="[a-zA-Z][a-zA-Z0-9\s]*" title="Please enter your last name" />
+									<input id="last_name" class="textbox" name="name" minlength="2" type="text" placeholder="Last name" required title="Please enter your last name" />
 								</p>
 								<p>
-									<input type="email" id="email" name="email" class="textbox" placeholder="Email address" spellcheck="false" required tabindex="2" />
+									<input type="email" id="email" name="email" class="textbox" placeholder="Email address" spellcheck="false" required />
 								</p>
 								<p>
-									<input type="text" id="company_url" name="company_url" class="textbox" placeholder="Company URL" spellcheck="false" required tabindex="2" />
+									<input type="url" id="company_url" name="company_url" class="textbox" placeholder="Company URL (http://... or https://...)" spellcheck="false" required tabindex="2" />
 								</p>
 								<p>
 									<button class="btn btn-lg btn-primary btn-block btn-contact" type="submit">Submit</button>
