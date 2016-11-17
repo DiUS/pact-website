@@ -1,13 +1,6 @@
-.register {
-  #img-back:after{
-    //background: //url('http://image.shutterstock.com/z/stock-photo-office-work-essential-tools-with-copy-space-in-the-middle-295555658.jpg') no-repeat 100%;
-    //background-size: 100% 100%;
-  }
-}
-
 #contact-sc{
   position:relative;
-  width:100%;
+  width:90%;
   top:0px;
   z-index:3;
 
@@ -41,26 +34,30 @@
 
 .cnt-contact-bg{
   padding:0px 0px 0px 0px;
+
+  .contact-me{
+    position: relative;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+
+  .contact-me span {
+    position: relative;
+    float: right;
+    margin: -50px 3px 0 0;
+    font: 11px/18px roboto;
+    color: #E10000;
+    pointer-events: none;
+  }
+
+  .contact-me #register-form{
+    position: relative;
+    margin-top: 5%;
+  }
 }
 
-.cnt-contact-bg .contact-me{
-  position: relative;
-  margin-top: 2%;
-  margin-left: 5%;
-}
-.cnt-contact-bg .contact-me span {
-  position: relative;
-  float: right;
-  margin: -50px 3px 0 0;
-  font: 11px/18px roboto;
-  color: #E10000;
-  pointer-events: none;
-}
-.cnt-contact-bg .contact-me #register-form{
-  position: relative;
-  margin-top: 5%;
-}
-.contact-me input[type="text"], .contact-me input[type="email"], .contact-me input[type="url"] {
+
+.contact-me input[type="text"], .contact-me input[type="email"], .contact-me input[type="url"]  {
   width:100%;
   padding:15px 15px;
   font-size:1.5rem;
@@ -75,11 +72,25 @@
   outline: 0;
 }
 
+.contact-me .form-label, .contact-me input[type="checkbox"] {
+  display: inline-block;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 100;
+  font-size:1.5rem;
+  color: #78899f;
+  margin:0% 0% 0% 0%;
+  margin-bottom:2em;
+}
+
+.contact-me input[type="checkbox"] {
+  margin-right: 10px;
+}
+
 .contact-me button {
   width: 50%;
   float: left;
   display: block;
-  margin: 20px auto;
+  margin: 20px auto 80px;
   z-index: 1;
   position: relative;
   -moz-box-sizing: border-box;

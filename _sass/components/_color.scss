@@ -34,7 +34,8 @@ MAIN COLOR:#32B8E9; (blue)
   }
 
   #register-form input[type="text"]:focus,
-  #register-form input[type="email"]:focus {
+  #register-form input[type="email"]:focus,
+  #register-form input[type="url"]:focus {
     border-bottom: 2px solid $orange;
   }
 
