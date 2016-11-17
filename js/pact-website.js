@@ -16,15 +16,15 @@ $('#register-form').submit(function (event) {
     promo_code: $('#promo_code').val()
   }
 
-  // $.ajax({
-  //   type: 'POST',
-  //   url: URL,
-  //   dataType: 'json',
-  //   contentType: 'application/json',
-  //   data: JSON.stringify(data),
-  //   // NOTE: API Gateway will always return nothing which it will alway end up fail.
-  //   // in this case ajax success/fail is not needed.
-  // })
+  $.ajax({
+    type: 'POST',
+    url: URL,
+    dataType: 'json',
+    contentType: 'application/json',
+    data: JSON.stringify(data),
+    // NOTE: API Gateway will always return nothing which it will alway end up fail.
+    // in this case ajax success/fail is not needed.
+  })
 })
 
 
