@@ -48,6 +48,7 @@
   width: 80%;
   position: relative;
   top: 45px;
+  color: $dark-blue;
 }
 #benefits .benefits-content p{
   font-family: 'Open Sans',sans-serif;
@@ -110,4 +111,15 @@
   min-width: 250px;
   -webkit-transition: .3s ease;
   transition: .3s ease;
+}
+
+@media only screen and (max-width:768px) {
+  #benefits{
+    .benefits-content {
+      padding: 0 30px;
+      h2 { width: 100%; }
+      p { width: 100%; text-align: justify; margin-bottom: 20px; }
+      ul.benefits-list { margin-top: 20%; margin-bottom: 10%; }
+    }
+  }
 }

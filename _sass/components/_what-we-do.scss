@@ -6,10 +6,9 @@
   border-bottom: 1px solid #dbdfdd;
 }
 #what-we-do .container{
-  width:100%;
   padding: 0;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #what-we-do .container .row{
   width: 100%;
@@ -29,7 +28,7 @@
   font-size: 3rem;
   letter-spacing: 0px;
   margin-top: 5%;
-  color: #3c3c4e;
+  color: $dark-blue;
 }
 #what-we-do .container p.title-txt{
   font-family: 'Open Sans',sans-serif;
@@ -38,6 +37,7 @@
   text-align: center;
   width: 50%;
   margin: 50px auto;
+  color: $dark-blue;
 }
 #what-we-do .item-container{
   position: relative;
@@ -46,10 +46,12 @@
   padding-right: 0 !important;
 }
 #what-we-do .item-what-we-do{
-  margin-left: 2.5%;
   text-align: center;
-  width: 30%;
 
+  @media only screen and (min-width:769px) {
+    width: 30%;
+    margin-left: 2.5%;
+  }
 }
 #what-we-do p.items{
   font-family: 'Open Sans',sans-serif;

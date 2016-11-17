@@ -42,17 +42,7 @@ footer {
   }
 
 }
-// footer.contact-ft{
-//   position: relative;
-//   z-index: 5;
-//   bottom: 20px;
-//   padding-bottom: 3rem;
-//   font-size: 1.5rem;
-//   line-height: 2.7rem;
-//   font-family: "Open Sans", sans-serif;
-//   color: #acb2bc;
-//   height: 50px;
-// }
+
 footer a, footer a:visited {
   color: $orange;
 }
@@ -112,7 +102,7 @@ footer ul li {
   display: inline-block;
 }
 
-.footer-bottom .terms{
+.footer-bottom .terms, .footer-bottom .privacy{
   margin-left: 25px;
   font-family: 'Open Sans',sans-serif;
   font-weight: 400;
@@ -146,4 +136,15 @@ footer ul li {
 #go-top a i {
   font-size: 1.5rem;
   line-height: inherit;
+}
+
+@media only screen and (max-width:768px) {
+  footer {
+    .twitter-info .social-icon-twitter:after { content: '' }
+  }
+  .footer-bottom .copyright { margin-left: 0; width: 100%; }
+  .footer-bottom .terms { margin-left: 0; margin-botto: 20px; }
+}
+@media only screen and (min-width:769px) {
+
 }

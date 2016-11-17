@@ -1,4 +1,3 @@
-
 /* 14.2 All Services*/
 #features{
   position:relative;
@@ -21,8 +20,6 @@
 }
 #features .container .main-features-content{
   position: relative;
-  margin-top:5%;
-  padding-left:10%;
 }
 #features .container h1{
   text-align: center;
@@ -49,4 +46,13 @@
 
 #features i{
   font-size: 4rem;
+}
+
+@media only screen and (max-width:768px) {
+  #features .item-all-features{ width: 100%; margin: 20px 0; }
+  .row-centered { margin-top: 5%; }
+  .cnt-features-bg { padding-bottom: 80px; }
+}
+@media only screen and (min-width:769px) {
+  .container .main-features-content{ padding-left: 10%; margin-top:5%;}
 }
