@@ -20,12 +20,7 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background:url('https://slack-imgs.com/?c=1&url=http%3A%2F%2Fimage.shutterstock.com%2Fz%2Fstock-photo-php-programming-html-coding-cyberspace-concept-432363862.jpg');
-
-  background: url('https://slack-imgs.com/?c=1&url=http%3A%2F%2Fimage.shutterstock.com%2Fz%2Fstock-photo-php-programming-html-coding-cyberspace-concept-407505481.jpg');
-  //background: url('http://media.istockphoto.com/photos/software-developers-picture-id621272078?s=2048x2048');
-  // background: url('http://media.istockphoto.com/photos/software-developers-at-work-picture-id606019764?s=2048x2048');
-  // background: url('http://media.istockphoto.com/photos/development-team-cooperating-in-their-office-picture-id510152128?s=2048x2048');
+  background:url('/assets/img/hero-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
