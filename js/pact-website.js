@@ -11,8 +11,8 @@ $('#register-form').submit(function (event) {
     first_name: $("#first_name").val(),
     last_name: $("#last_name").val(),
     company_url: $('#company_url').val(),
-    email: $('#email').val()
-    phone_number: $('#phone_number').val()
+    email: $('#email').val(),
+    phone_number: $('#phone_number').val(),
     promo_code: $('#promo_code').val()
   }
 
@@ -24,6 +24,13 @@ $('#register-form').submit(function (event) {
     data: JSON.stringify(data),
     // NOTE: API Gateway will always return nothing which it will alway end up fail.
     // in this case ajax success/fail is not needed.
+    // success: function () {
+    //   console.log("success, now clear form values");
+    //   $('input').val("");
+    // },
+    // error: function () {
+    //   console.log("ooops, failed");
+    // }
   })
 })
 
@@ -35,6 +42,5 @@ $('#register-form').on('submit', function(){
     $('.registration').hide();
     $('.signup-complete').show();
   }, 500);
-
 })
 });
