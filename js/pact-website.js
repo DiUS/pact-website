@@ -32,6 +32,17 @@ $('#register-form').submit(function (event) {
     //   console.log("ooops, failed");
     // }
   })
+
+  try {
+    // Registery event with GA
+    ga('send', 'event', {
+      eventCategory: 'registration',
+      eventAction: 'complete',
+      eventLabel: 'beta'
+    });
+  } catch (e) {
+    console.log("Exception reporting to GA: " + e);
+  }
 })
 
 
