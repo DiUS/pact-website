@@ -21,7 +21,7 @@ In your browser, go to `localhost:4000`
 
 ```
 $ bundle
-$ JEKYLL_ENV=production jekyll build
+$ JEKYLL_ENV=production bundle exec jekyll build
 ```
 
 ### Cheatsheets
