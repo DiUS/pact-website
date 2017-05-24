@@ -3,7 +3,7 @@
   $(window).on('scroll', function() {
 
     var y = $(window).scrollTop(),
-    topBar = $('header');
+      topBar = $('header');
     if (y > 1) {
       topBar.addClass('sticky');
       $('header .logo a').removeClass('logo-light');
@@ -32,7 +32,9 @@
 $(document).ready(function() {
   //Go to top button
   $("#go-top").on('click', function() {
-    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    $('html, body').animate({
+      scrollTop: 0
+    }, 'slow');
   });
   //Counter Up
   $('.counter').counterUp({
@@ -42,7 +44,7 @@ $(document).ready(function() {
 
   // Mobile Menu
   var toggleButton = $('.menu-toggle'),
-  nav = $('.main-navigation-mobile');
+    nav = $('.main-navigation-mobile');
 
   toggleButton.on('click', function(event) {
     event.preventDefault();
@@ -145,6 +147,11 @@ $(document).ready(function() {
     }
   });
 
+  //Time zone
+  $('#time_zone').select2({
+    placeholder: 'What time zone are you in?'
+  });
+
   //Typed Text
   $("#typed").typed({
     strings: ["Creative Multipurpose Software Template", "Design Templates with Usability.", "Showcase your product."],
@@ -207,7 +214,7 @@ $(document).ready(function() {
   $('#clock').countdown('2017/08/13', function(event) {
     var $this = $(this).html(event.strftime(''
 
-    + '<span>%-D <p class="clock"> day%!D </p></span>' + '<span >%H <p class="clock"> hour%!D</p></span> ' + '<span>%M <p class="clock"> minute%!D</p></span> ' + '<span>%S <p class="clock"> second%!D</p></span>'));
+      + '<span>%-D <p class="clock"> day%!D </p></span>' + '<span >%H <p class="clock"> hour%!D</p></span> ' + '<span>%M <p class="clock"> minute%!D</p></span> ' + '<span>%S <p class="clock"> second%!D</p></span>'));
   });
 
   //Placeholder Plugin Settings
