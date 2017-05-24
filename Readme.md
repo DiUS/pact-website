@@ -2,10 +2,18 @@
 
 ## Development team
 
+### Install dependencies
+
+You'll need `grunt` and `bundle` installed.
+
+```
+$ bundle install
+```
+
 ### Build (and run) locally
 
 ```
-$ grunt
+$ bundle exec grunt
 ```
 In your browser, go to `localhost:4000`
 
