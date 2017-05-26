@@ -7,6 +7,7 @@
 You'll need `grunt` and `bundle` installed.
 
 ```
+$ npm install
 $ bundle install
 ```
 
