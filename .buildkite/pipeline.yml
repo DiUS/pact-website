@@ -1,0 +1,27 @@
+---
+steps:
+  - command: |-
+      ./shell/bundle.sh
+    label: ':package: Bundle Jekyll'
+    agents:
+      queue: pactprod
+
+  - wait
+
+  - command: |-
+      ./shell/build.sh
+    label: ':building_construction: Build Jekyll'
+    agents:
+      queue: pactprod
+
+  - block: ":rocket: Release!"
+
+  - command: |-
+      ./shell/deploy.sh
+    label: ':rocket: Deploy Pact SaaS Website'
+    env:
+      AWS_S3_BUCKET: s3://pact-saas
+      AWS_DEFAULT_REGION: ap-southeast-2
+    agents:
+      queue: pactprod
+

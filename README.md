@@ -4,11 +4,20 @@
 
 ### Install dependencies
 
-You'll need `grunt` and `bundle` installed.
+You'll either need `grunt` and `bundle` or `docker` installed.
+
+* NPM and Bundle:
 
 ```
 $ npm install
 $ bundle install
+```
+
+* Docker
+
+```
+$ ./shell/bundle.sh
+$ ./shell/build.sh
 ```
 
 ### Build (and run) locally
