@@ -11,6 +11,8 @@ steps:
   - command: |-
       ./shell/build.sh
     label: ':building_construction: Build Jekyll'
+    env:
+      JEKYLL_ENV: production
     agents:
       queue: pactprod
 
