@@ -1,0 +1,14 @@
+{
+  "Version": "2012-10-17",
+  "Id": "*******",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::076810171851:role/lambda_basic_execution"
+      },
+      "Action": "s3:*",
+      "Resource": "arn:aws:s3:::pact-saas-form-data/*"
+    }
+  ]
+}
