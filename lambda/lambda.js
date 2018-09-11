@@ -25,6 +25,12 @@ exports.handler = function (event, context) {
 
 
 function sendEmail (event, done) {
+    
+    var d = new Date()
+    var human = 'Company Name: ' + event.company_name + '\nFirst Name: ' + event.first_name + '\nLast Name: ' + event.last_name + '\nCompany URL: ' + event.company_url + '\nEmail: ' + event.email + '\nPhone Number: ' + event.phone_number + '\nPromo Code: ' + event.promo_code + '\nHow do you hear about us: ' + event.how_hear;
+    var script = 'ENVIRONMENT=prod ./scripts/create-customer.sh "' + event.company_name + '" "' + event.first_name + '" "' + event.email + '"';
+    var spreadsheet = [event.company_name, d.getFullYear() + '-' + d.getMonth() + '-' + d.getUTCDate(),d.getUTCMonth() + '-' + d.getUTCDate(), event.email, event.promo_code + ' ' + event.how_hear, '', event.phone_number, event.first_name, event.last_name, event.company_url].join(',');
+
     var params = {
         Destination: {
             ToAddresses: [
@@ -34,7 +40,7 @@ function sendEmail (event, done) {
         Message: {
             Body: {
                 Text: {
-                    Data: 'Company Name: ' + event.company_name + '\nFirst Name: ' + event.first_name + '\nLast Name: ' + event.last_name + '\nCompany URL: ' + event.company_url + '\nEmail: ' + event.email + '\nPhone Number: ' + event.phone_number + '\nPromo Code: ' + event.promo_code + '\nHow do you hear about us: ' + event.how_hear,
+                    Data: [human, script, spreadsheet].join('\n\n'),
                     Charset: 'UTF-8'
                 }
             },
@@ -47,3 +53,5 @@ function sendEmail (event, done) {
     }
     ses.sendEmail(params, done)
 }
+
+console.log('foo')
