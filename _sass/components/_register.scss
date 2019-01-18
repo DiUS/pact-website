@@ -55,8 +55,17 @@
     position: relative;
     margin-top: 5%;
   }
-}
 
+  span.domain {
+    font-size:1.5rem;
+    color: #78899f;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 100;
+    position: relative;
+    float: right;
+    margin: -50px 3px 0 0;
+  }
+}
 
 .contact-me input[type="text"], .contact-me input[type="email"], .contact-me input[type="url"]  {
   width:100%;
