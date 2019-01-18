@@ -7,6 +7,7 @@ $('#register-form').submit(function (event) {
   event.preventDefault();
 
   var data = {
+    requested_subdomain: $("#requested_subdomain").val(),
     company_name: $("#company_name").val(),
     first_name: $("#first_name").val(),
     last_name: $("#last_name").val(),
