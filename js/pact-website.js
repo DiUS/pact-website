@@ -1,7 +1,6 @@
 $(document).ready(function(){
-  console.log("works");
-
   var URL = 'https://z4bzdlc927.execute-api.us-east-1.amazonaws.com/staging/register'
+  var URL_B = 'https://xitqupigzd.execute-api.ap-southeast-2.amazonaws.com/Prod/api/registrations'
 
 $('#register-form').submit(function (event) {
   event.preventDefault();
@@ -33,6 +32,14 @@ $('#register-form').submit(function (event) {
     // error: function () {
     //   console.log("ooops, failed");
     // }
+  })
+
+  $.ajax({
+    type: 'POST',
+    url: URL_B,
+    dataType: 'json',
+    contentType: 'application/json',
+    data: JSON.stringify(data),
   })
 
   try {
