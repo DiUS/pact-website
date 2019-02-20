@@ -1,6 +1,7 @@
 $(document).ready(function(){
-  var URL = 'https://z4bzdlc927.execute-api.us-east-1.amazonaws.com/staging/register'
-  var URL_B = 'https://xitqupigzd.execute-api.ap-southeast-2.amazonaws.com/Prod/api/registrations'
+  var REGISTRATIONS_GATEWAY_LEGACY_URL = 'https://z4bzdlc927.execute-api.us-east-1.amazonaws.com/staging/register'
+  var REGISTRATIONS_GATEWAY_URL_DEV = 'https://2c6kjv2409.execute-api.ap-southeast-2.amazonaws.com/Stage/api/registrations'
+  var REGISTRATIONS_GATEWAY_URL_PROD = 'https://h3dk1l7b62.execute-api.ap-southeast-2.amazonaws.com/Prod/api/registrations'
 
 $('#register-form').submit(function (event) {
   event.preventDefault();
@@ -19,7 +20,7 @@ $('#register-form').submit(function (event) {
 
   $.ajax({
     type: 'POST',
-    url: URL,
+    url: REGISTRATIONS_GATEWAY_LEGACY_URL,
     dataType: 'json',
     contentType: 'application/json',
     data: JSON.stringify(data),
@@ -36,7 +37,15 @@ $('#register-form').submit(function (event) {
 
   $.ajax({
     type: 'POST',
-    url: URL_B,
+    url: REGISTRATIONS_GATEWAY_URL_DEV,
+    dataType: 'json',
+    contentType: 'application/json',
+    data: JSON.stringify(data),
+  })
+
+  $.ajax({
+    type: 'POST',
+    url: REGISTRATIONS_GATEWAY_URL_PROD,
     dataType: 'json',
     contentType: 'application/json',
     data: JSON.stringify(data),
