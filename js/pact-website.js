@@ -13,8 +13,6 @@ $('#register-form').submit(function (event) {
     last_name: $("#last_name").val(),
     company_url: $('#company_url').val(),
     email: $('#email').val(),
-    phone_number: $('#phone_number').val(),
-    promo_code: $('#promo_code').val(),
     how_hear: $('#how_hear').val()
   }
 
