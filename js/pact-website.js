@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  var REGISTRATIONS_GATEWAY_LEGACY_URL = 'https://z4bzdlc927.execute-api.us-east-1.amazonaws.com/staging/register'
   var REGISTRATIONS_GATEWAY_URL_DEV = 'https://2c6kjv2409.execute-api.ap-southeast-2.amazonaws.com/Stage/api/registrations'
   var REGISTRATIONS_GATEWAY_URL_PROD = 'https://h3dk1l7b62.execute-api.ap-southeast-2.amazonaws.com/Prod/api/registrations'
 
@@ -15,23 +14,6 @@ $('#register-form').submit(function (event) {
     email: $('#email').val(),
     how_hear: $('#how_hear').val()
   }
-
-  $.ajax({
-    type: 'POST',
-    url: REGISTRATIONS_GATEWAY_LEGACY_URL,
-    dataType: 'json',
-    contentType: 'application/json',
-    data: JSON.stringify(data),
-    // NOTE: API Gateway will always return nothing which it will alway end up fail.
-    // in this case ajax success/fail is not needed.
-    // success: function () {
-    //   console.log("success, now clear form values");
-    //   $('input').val("");
-    // },
-    // error: function () {
-    //   console.log("ooops, failed");
-    // }
-  })
 
   $.ajax({
     type: 'POST',
