@@ -12,7 +12,8 @@ $('#register-form').submit(function (event) {
     last_name: $("#last_name").val(),
     company_url: $('#company_url').val(),
     email: $('#email').val(),
-    how_hear: $('#how_hear').val()
+    how_hear: $('#how_hear').val(),
+    github_auth: $('#github_auth').prop('checked')
   }
 
   $.ajax({
