@@ -1,0 +1,408 @@
+/*
+MAIN COLOR:#A26CFA; (violet)
+*/
+
+/* - ELEMENTS
+================================================*/
+.template-color-A26CFA .cnt-hero-content .cnt-btn,
+.template-color-A26CFA #services .btn-outlined:hover,
+.template-color-A26CFA #features .btn-outlined:hover,
+.template-color-A26CFA .hero-features .btn-outlined:hover,
+.template-color-A26CFA #showcase .btn-outlined,
+.template-color-A26CFA #workwithus  .cnt-btn:hover,
+.template-color-A26CFA #post-blog .btn-outlined,
+.template-color-A26CFA #post-blog #footer-blog .pager li a:hover,
+.template-color-A26CFA #post-blog #footer-blog-right .pager li a:hover,
+.template-color-A26CFA #post-blog #footer-blog-left .pager li a:hover,
+.template-color-A26CFA .hero-blog-post .btn-outlined:hover,
+.template-color-A26CFA #subscribe-blog .btn-subscribe,
+.template-color-A26CFA .blog-comment .btn.btn-comment,
+.template-color-A26CFA .hero-faq .btn-outlined:hover,
+.template-color-A26CFA .hero-privacy .btn-outlined:hover,
+.template-color-A26CFA .hero-comparisonchart .btn-outlined:hover,
+.template-color-A26CFA .hero-contact .btn-outlined:hover,
+.template-color-A26CFA  .main-navigation li a:hover,
+.template-color-A26CFA  #hero-4  .cnt-btn:hover,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-twitter:hover,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-facebook:hover,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-mail:hover,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-rss:hover,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-twitter:hover,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-facebook:hover,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-mail:hover,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-rss:hover,
+.template-color-A26CFA .pricing-content .price-block .button:hover,
+.template-color-A26CFA .pricing-content .price-block .button:focus,
+.template-color-A26CFA .btn-comparison:hover,
+.template-color-A26CFA .btn-comparison:focus,
+.template-color-A26CFA .cnt-contact-bg .data-contact i:hover,
+.template-color-A26CFA .cnt-contact-bg .data-contact-mobile i:hover,
+.template-color-A26CFA  .hero-services  .cnt-btn:hover,
+.template-color-A26CFA  .hero-services  .cnt-btn,
+.template-color-A26CFA .hero-error .btn-outlined:hover,
+.template-color-A26CFA #sblog .btn-outlined:hover,
+.template-color-A26CFA .main-navigation-mobile ul.mobile-content li a,
+.template-color-A26CFA #how-it-works .tab-nav a:hover,
+.template-color-A26CFA #how-it-works .tab-nav a.active,
+.template-color-A26CFA .container-left-sidebar .tag-cloud .tag:hover,
+.template-color-A26CFA .hero-careers .btn-outlined:hover,
+.template-color-A26CFA #hiring .job-position .button
+{
+color: #fff;
+}
+
+.template-color-A26CFA .site-links li a:hover,
+.template-color-A26CFA .cnt-btn,
+.template-color-A26CFA .cnt-btn:hover,
+.template-color-A26CFA #services .btn-outlined,
+.template-color-A26CFA #features .btn-outlined,
+.template-color-A26CFA #started .btn-outlined:hover,
+.template-color-A26CFA .hero-features .btn-outlined,
+.template-color-A26CFA #solutions h2.key-features,
+.template-color-A26CFA #solutions .item-feature i,
+.template-color-A26CFA #solutions .learn-more:hover,
+.template-color-A26CFA #solutions #feature-item-01 h2,
+.template-color-A26CFA .between-words,
+.template-color-A26CFA #services i,
+.template-color-A26CFA #features .container b,
+.template-color-A26CFA #features .icon-box .icon i:hover,
+.template-color-A26CFA .left-icon-text h2,
+.template-color-A26CFA #stats i,
+.template-color-A26CFA .subscribe-form input[type="text"]:focus,
+.template-color-A26CFA .subscribe-coming .subscribe-form input[type="text"]:focus,
+.template-color-A26CFA .widget ul li a:hover,
+.template-color-A26CFA #get-quote .btn-outlined:hover,
+.template-color-A26CFA #intro-about h3.what-we-do,
+.template-color-A26CFA .team-list .team-detail h2,
+.template-color-A26CFA .team-detail .social:hover,
+.template-color-A26CFA #workwithus  .cnt-btn.active-btn:hover,
+.template-color-A26CFA #login-form .btn.btn-signin:hover,
+.template-color-A26CFA #login-form .btn.btn-signin:active,
+.template-color-A26CFA #login-form .btn.btn-signin:focus,
+.template-color-A26CFA #login-form .forgot-password:hover,
+.template-color-A26CFA #login-form .forgot-password:active,
+.template-color-A26CFA #login-form .forgot-password:focus,
+.template-color-A26CFA #register .btn.btn-signup:hover,
+.template-color-A26CFA #register .btn.btn-signup:active,
+.template-color-A26CFA #register .btn.btn-signup:focus,
+.template-color-A26CFA #post-blog .btn:hover,
+.template-color-A26CFA .hero-blog-post .btn-outlined,
+.template-color-A26CFA .left-post i:hover,
+.template-color-A26CFA .right-post i:hover,
+.template-color-A26CFA #subscribe-blog .btn-subscribe:hover,
+.template-color-A26CFA .main-navigation li.highlight a,
+.template-color-A26CFA .main-navigation li a:hover,
+.template-color-A26CFA .main-navigation li.current a.current-sticky,
+.template-color-A26CFA .blog-comment .text-success,
+.template-color-A26CFA .blog-comment .media-body a,
+.template-color-A26CFA .blog-comment .btn.btn-comment:hover,
+.template-color-A26CFA .blog-comment .btn.btn-comment:active,
+.template-color-A26CFA .blog-comment .btn.btn-comment:focus,
+.template-color-A26CFA footer h4,
+.template-color-A26CFA footer h5,
+.template-color-A26CFA .footer-main ul a:hover,
+.template-color-A26CFA .footer-main ul a:focus,
+.template-color-A26CFA .hero-faq .btn-outlined,
+.template-color-A26CFA .hero-privacy .btn-outlined,
+.template-color-A26CFA .hero-comparisonchart .btn-outlined,
+.template-color-A26CFA .hero-contact .btn-outlined,
+.template-color-A26CFA #hero-4 .cnt-btn.active-btn:hover,
+.template-color-A26CFA #privacy ol li,
+.template-color-A26CFA #privacy ul li,
+.template-color-A26CFA .main-navigation li.current > a,
+.template-color-A26CFA .cnt-hero-content .cnt-btn:hover,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-twitter,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-facebook,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-mail,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-rss,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-twitter,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-facebook,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-mail,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-rss,
+.template-color-A26CFA .pricing-content .price-block .button,
+.template-color-A26CFA .btn-comparison,
+.template-color-A26CFA .contact-me .btn.btn-contact:hover,
+.template-color-A26CFA .contact-me .btn.btn-contact:active,
+.template-color-A26CFA .contact-me .btn.btn-contact:focus,
+.template-color-A26CFA .cnt-contact-bg .data-contact i,
+.template-color-A26CFA .cnt-contact-bg .data-contact ul.data-content,
+.template-color-A26CFA .cnt-contact-bg .data-contact-mobile i,
+.template-color-A26CFA .cnt-contact-bg .data-contact-mobile ul.data-content,
+.template-color-A26CFA .hero-services .cnt-btn.active-btn:hover,
+.template-color-A26CFA #showcase .btn-outlined:hover,
+.template-color-A26CFA .hero-error .btn-outlined,
+.template-color-A26CFA #sblog .btn-outlined,
+.template-color-A26CFA #services .container p.title-txt,
+.template-color-A26CFA #go-top a i:hover,
+.template-color-A26CFA .main-navigation-mobile li.mobile-title a,
+.template-color-A26CFA .main-navigation-mobile ul.mobile-content li a:hover,
+.template-color-A26CFA #sblog .cnt-post ul.data-post li.separator-post,
+.template-color-A26CFA #sblog .cnt-post ul.data-post li.category,
+.template-color-A26CFA #sblog .cnt-post  .read-more,
+.template-color-A26CFA .footer-main .footer-subscribe ul.contact li i,
+.template-color-A26CFA .footer-bottom .copyright span i,
+.template-color-A26CFA #allservices i,
+.template-color-A26CFA #how-it-works .tab-nav a,
+.template-color-A26CFA #how-it-works .tab-nav a.active:hover,
+.template-color-A26CFA .tab-content .tab-content-txt ul.list-slider li i,
+.template-color-A26CFA #showcase .showcase-content h2,
+.template-color-A26CFA #showcase .showcase-content ul.showcase-list li i,
+.template-color-A26CFA .searchbutton:hover, .searchbutton:focus,
+.template-color-A26CFA .searchbutton:active,
+.template-color-A26CFA .container-right-sidebar .archives div.cnt-sidebar li span,
+.template-color-A26CFA .container-left-sidebar .archives div.cnt-sidebar li span,
+.template-color-A26CFA .container-right-sidebar .popular-posts .top_post_right h2,
+.template-color-A26CFA .container-left-sidebar .popular-posts .top_post_left h2,
+.template-color-A26CFA .clicked-filter,
+.template-color-A26CFA #login-form .sign-now span,
+.template-color-A26CFA .container-right-sidebar ul.archive-children li a:hover,
+.template-color-A26CFA .container-left-sidebar ul.archive-children li a:hover,
+.template-color-A26CFA .hero-careers .btn-outlined,
+.template-color-A26CFA #hiring .job-position .button:hover,
+.template-color-A26CFA #register h4 span,
+.template-color-A26CFA .cnt-herocoming-content #clock p.clock,
+.template-color-A26CFA .cfeature-first i:hover,
+.template-color-A26CFA .cfeature i:hover
+{
+color: #A26CFA;
+}
+.template-color-A26CFA .main-header .btn-outlined,
+.template-color-A26CFA #services .btn-outlined,
+.template-color-A26CFA #features .btn-outlined,
+.template-color-A26CFA .hero-features .btn-outlined,
+.template-color-A26CFA #showcase .btn-outlined,
+.template-color-A26CFA #get-quote .btn-outlined,
+.template-color-A26CFA .subscribe-form input[type="text"]:focus,
+.template-color-A26CFA .subscribe-coming .subscribe-form input[type="text"]:focus,
+.template-color-A26CFA #login-form .btn.btn-signin:hover,
+.template-color-A26CFA #login-form .btn.btn-signin:active,
+.template-color-A26CFA #login-form .btn.btn-signin:focus,
+.template-color-A26CFA #register .btn.btn-signup:hover,
+.template-color-A26CFA #register .btn.btn-signup:active,
+.template-color-A26CFA #register .btn.btn-signup:focus,
+.template-color-A26CFA #post-blog .btn:hover,
+.template-color-A26CFA #subscribe-blog .btn-subscribe,
+.template-color-A26CFA .form-control-newsletter:focus,
+.template-color-A26CFA .tag li,
+.template-color-A26CFA .blog-comment textarea:focus,
+.template-color-A26CFA .blog-comment .btn.btn-comment:hover,
+.template-color-A26CFA .blog-comment .btn.btn-comment:active,
+.template-color-A26CFA .blog-comment .btn.btn-comment:focus,
+.template-color-A26CFA .footer-main .footer-subscribe .subscribe-form input[type="email"]:focus,
+.template-color-A26CFA #accordion .panel,
+.template-color-A26CFA .contact-me .btn.btn-contact:hover,
+.template-color-A26CFA .contact-me .btn.btn-contact:active,
+.template-color-A26CFA .contact-me .btn.btn-contact:focus,
+.template-color-A26CFA #sblog .btn-outlined,
+.template-color-A26CFA #how-it-works .tab-nav a,
+.template-color-A26CFA #how-it-works .tab-nav a.active
+.template-color-A26CFA .init-filter,
+.template-color-A26CFA .clicked-filter,
+.template-color-A26CFA .container-left-sidebar .tag-cloud .tag:hover,
+.template-color-A26CFA .container-right-sidebar .tag-cloud .tag:hover,
+.template-color-A26CFA .hero-careers .btn-outlined
+{
+border: 1px solid #A26CFA;
+}
+.template-color-A26CFA .main-header .btn-outlined:hover,
+.template-color-A26CFA .cnt-hero-content .cnt-btn,
+.template-color-A26CFA #services .btn-outlined:hover,
+.template-color-A26CFA #features .btn-outlined:hover,
+.template-color-A26CFA #showcase .btn-outlined,
+.template-color-A26CFA .hero-features .btn-outlined:hover,
+.template-color-A26CFA #get-quote .btn-outlined,
+.template-color-A26CFA .txt-testimonial,
+.template-color-A26CFA .hero-mat,
+.template-color-A26CFA .cnt-started-bg,
+.template-color-A26CFA .btn-special,
+.template-color-A26CFA .btn-special:hover,
+.template-color-A26CFA #workwithus .cnt-btn.active-btn,
+.template-color-A26CFA #workwithus  .cnt-btn:hover,
+.template-color-A26CFA .login-pg,
+.template-color-A26CFA #login-form .btn.btn-signin,
+.template-color-A26CFA #register .btn.btn-signup,
+.template-color-A26CFA #post-blog .btn-outlined,
+.template-color-A26CFA #post-blog #footer-blog .pager li a:hover,
+.template-color-A26CFA #post-blog #footer-blog-right .pager li a:hover,
+.template-color-A26CFA #post-blog #footer-blog-left .pager li a:hover,
+.template-color-A26CFA .hero-blog-post .btn-outlined:hover,
+.template-color-A26CFA #subscribe-blog .btn-subscribe,
+.template-color-A26CFA .main-navigation li.current a::after,
+.template-color-A26CFA .tag li:hover,
+.template-color-A26CFA .blog-comment .btn.btn-comment,
+.template-color-A26CFA .hero-faq .btn-outlined:hover,
+.template-color-A26CFA .hero-privacy .btn-outlined:hover,
+.template-color-A26CFA .hero-comparisonchart .btn-outlined:hover,
+.template-color-A26CFA .hero-contact .btn-outlined:hover,
+.template-color-A26CFA #hero-4 .cnt-btn.active-btn,
+.template-color-A26CFA #hero-4  .cnt-btn:hover,
+.template-color-A26CFA .hero--slider .slick-dots .slick-active button,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-twitter:hover,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-facebook:hover,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-mail:hover,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-rss:hover,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-twitter:hover,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-facebook:hover,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-mail:hover,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-rss:hover,
+.template-color-A26CFA .pricing-content .price-block .plan-title::after,
+.template-color-A26CFA .pricing-content .price-block .button:hover,
+.template-color-A26CFA .pricing-content .price-block .button:focus,
+.template-color-A26CFA .pricing-content .primary .top-part::before,
+.template-color-A26CFA .btn-comparison:hover,
+.template-color-A26CFA .btn-comparison:focus,
+.template-color-A26CFA #main-nav-wrap ul.main-navigation ul.dropdown-blog,
+.template-color-A26CFA #main-nav-wrap ul.main-navigation ul.dropdown,
+.template-color-A26CFA .contact-me .btn.btn-contact,
+.template-color-A26CFA .hero-services .cnt-btn.active-btn,
+.template-color-A26CFA .hero-services  .cnt-btn:hover,
+.template-color-A26CFA .slidenow .slick-dots .slick-active button,
+.template-color-A26CFA .hero-error .btn-outlined:hover,
+.template-color-A26CFA #sblog .btn-outlined:hover,
+.template-color-A26CFA #sblog .cnt-blog-wg .cnt-post .fit_image img,
+.template-color-A26CFA #how-it-works .tab-nav a.active,
+.template-color-A26CFA #how-it-works .tab-nav a:hover,
+.template-color-A26CFA .center-tab .video,
+.template-color-A26CFA .center-tab .video .overlay-video,
+.template-color-A26CFA .searchbox:focus, .searchbox:hover,
+.template-color-A26CFA .searchbox:focus + .searchbutton, .searchbox:hover + .searchbutton,
+.template-color-A26CFA .init-filter,
+.template-color-A26CFA #post-blog .container-post .data-post-main,
+.template-color-A26CFA .container-left-sidebar .tag-cloud .tag:hover,
+.template-color-A26CFA .container-right-sidebar .tag-cloud .tag:hover,
+.template-color-A26CFA .hero-careers .btn-outlined:hover,
+.template-color-A26CFA #hiring .job-position .button,
+.template-color-A26CFA .cnt-herocoming-content #clock span
+{
+background: #A26CFA;
+}
+.template-color-A26CFA .cnt-hero-content .cnt-btn,
+.template-color-A26CFA #workwithus .cnt-btn.active-btn,
+.template-color-A26CFA #workwithus .cnt-btn:hover,
+.template-color-A26CFA #post-blog #footer-blog .pager li a:hover,
+.template-color-A26CFA #post-blog #footer-blog-right .pager li a:hover,
+.template-color-A26CFA #post-blog #footer-blog-left .pager li a:hover,
+.template-color-A26CFA .hero-blog-post .btn-outlined,
+.template-color-A26CFA .hero-faq .btn-outlined,
+.template-color-A26CFA .hero-privacy .btn-outlined,
+.template-color-A26CFA .hero-comparisonchart .btn-outlined,
+.template-color-A26CFA .hero-contact .btn-outlined,
+.template-color-A26CFA #hero-4 .cnt-btn.active-btn,
+.template-color-A26CFA #hero-4 .cnt-btn:hover,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-twitter,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-facebook,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-mail,
+.template-color-A26CFA .container-right-sidebar .social-icon-holder-rss,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-twitter,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-facebook,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-mail,
+.template-color-A26CFA .container-left-sidebar .social-icon-holder-rss,
+.template-color-A26CFA .pricing-content .price-block,
+.template-color-A26CFA .pricing-content .price-block .button,
+.template-color-A26CFA .pricing-content .primary,
+.template-color-A26CFA .btn-comparison,
+.template-color-A26CFA .hero-services .cnt-btn.active-btn,
+.template-color-A26CFA .hero-services .cnt-btn:hover,
+.template-color-A26CFA .hero-error .btn-outlined,
+.template-color-A26CFA #sblog .cnt-blog-wg .cnt-post,
+.template-color-A26CFA #register input:focus,
+.template-color-A26CFA #hiring .job-position .button,
+.template-color-A26CFA #hiring .job-position .button:hover,
+.template-color-A26CFA #hiring .job-position
+{
+border:2px solid #A26CFA;
+}
+.template-color-A26CFA hr.question,
+.template-color-A26CFA #login-form .form-signin .form-control:focus,
+.template-color-A26CFA hr.title-sidebar,
+.template-color-A26CFA .contact-me input[type="text"]:focus,
+.template-color-A26CFA .contact-me textarea:focus,
+.template-color-A26CFA .contact-me input[type="email"]:focus
+{
+border-color:#A26CFA;
+}
+.template-color-A26CFA .txt-testimonial:before
+{
+border-color: #34495e #fff;
+
+}
+.template-color-A26CFA #get-quote .btn-outlined:hover,
+.template-color-A26CFA #workwithus  .cnt-btn.active-btn:hover,
+.template-color-A26CFA #login-form .btn.btn-signin:hover,
+.template-color-A26CFA #login-form .btn.btn-signin:active,
+.template-color-A26CFA #login-form .btn.btn-signin:focus,
+.template-color-A26CFA #register .btn.btn-signup:hover,
+.template-color-A26CFA #register .btn.btn-signup:active,
+.template-color-A26CFA #register .btn.btn-signup:focus,
+.template-color-A26CFA #hero-4 .cnt-btn.active-btn:hover,
+.template-color-A26CFA #post-blog .btn:hover,
+.template-color-A26CFA #subscribe-blog .btn-subscribe:hover,
+.template-color-A26CFA .blog-comment .btn.btn-comment:hover,
+.template-color-A26CFA .footer-main .footer-subscribe .subscribe-form input[type="email"]:focus,
+.template-color-A26CFA .cnt-hero-content .cnt-btn:hover,
+.template-color-A26CFA .contact-me .btn.btn-contact:hover,
+.template-color-A26CFA .contact-me .btn.btn-contact:active,
+.template-color-A26CFA .contact-me .btn.btn-contact:focus,
+.template-color-A26CFA .hero-services .cnt-btn.active-btn:hover,
+.template-color-A26CFA #showcase .btn-outlined:hover,
+.template-color-A26CFA #how-it-works .tab-nav a.active:hover,
+.template-color-A26CFA .clicked-filter,
+.template-color-A26CFA #hiring .job-position .button:hover
+{
+background: transparent;
+}
+.template-color-A26CFA .fit-image:after
+{
+background:#A26CFA;
+opacity: 0.6;
+
+}
+.template-color-A26CFA .error-path
+{
+fill:#A26CFA;
+}
+.template-color-A26CFA #wearein #mapa:hover
+{
+fill:#A26CFA;
+transition: 200ms;
+transition-timing-function: ease-in-out;
+-webkit-transition: 200ms;
+-webkit-transition-timing-function: ease-in-out;
+cursor: pointer;
+}
+.template-color-A26CFA .theader,
+.template-color-A26CFA .cfeature-first
+{
+border-top: 1px solid #A26CFA;
+}
+.template-color-A26CFA .cfeature,
+.template-color-A26CFA .cfeature-first,
+.template-color-A26CFA .free,
+.template-color-A26CFA .theader.free,
+.template-color-A26CFA .standard,
+.template-color-A26CFA .theader.standard,
+.template-color-A26CFA .premium,
+.template-color-A26CFA .theader.premium
+{
+border-bottom: 1px solid #A26CFA;
+}
+.template-color-A26CFA .cfeature,
+.template-color-A26CFA .cfeature-first,
+.template-color-A26CFA .free,
+.template-color-A26CFA .standard
+{
+border-left: 1px solid #A26CFA;
+}
+.template-color-A26CFA .standard,
+.template-color-A26CFA .premium
+{
+border-right: 1px solid #A26CFA;
+}
+.template-color-A26CFA .cnt-contact-bg .data-contact
+{
+border-top: 15px solid #A26CFA;
+}
+.template-color-A26CFA .cnt-contact-bg .data-contact
+{
+border-bottom: 15px solid #A26CFA;
+}
