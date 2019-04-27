@@ -210,7 +210,6 @@ border: 1px solid #5DDED8;
 .template-color-pact #showcase .btn-outlined,
 .template-color-pact .hero-features .btn-outlined:hover,
 .template-color-pact #get-quote .btn-outlined,
-.template-color-pact .txt-testimonial,
 .template-color-pact .hero-mat,
 .template-color-pact .cnt-started-bg,
 .template-color-pact .btn-special,
@@ -367,7 +366,7 @@ transition-timing-function: ease-in-out;
 -webkit-transition-timing-function: ease-in-out;
 cursor: pointer;
 }
-.template-color-pact .theader,
+/* .template-color-pact .theader,
 .template-color-pact .cfeature-first
 {
 border-top: 1px solid #5DDED8;
@@ -394,7 +393,7 @@ border-left: 1px solid #5DDED8;
 .template-color-pact .premium
 {
 border-right: 1px solid #5DDED8;
-}
+} */
 .template-color-pact .cnt-contact-bg .data-contact
 {
 border-top: 15px solid #5DDED8;
@@ -427,4 +426,7 @@ color: #000000;
 
 .template-color-pact .pricing-content .primary .top-part::before {
   background-color: #000000
+}
+.pe-7s-check {
+  color: #5DDED8;
 }

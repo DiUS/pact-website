@@ -87,6 +87,9 @@ width: 100%;
 position: relative;
 margin-top: 10%;
 }
+.txt-testimonial {
+min-height: 230px;
+}
 .txt-testimonial p{
 padding: 20px 20px 10px 15px;
 }
@@ -120,6 +123,18 @@ float: none !important;
 clear: both !important;
 margin-left: 0;
 margin-right: 0;
+}
+#comparison .comparison-table-01 .row.feature .infos i.fa {
+	display:none;
+}
+#comparison .comparison-table-01 .row.feature .infos {
+	text-align: center;
+	font-weight: 800;
+	padding: 20px 0;
+	margin: 10px 0 0 0;
+}
+#comparison .comparison-table-01 .row.feature .ccfreature {
+  border: none;
 }
 #subscribe .container p{
 width: 100%;
@@ -803,7 +818,7 @@ position: relative;
 margin-top: 10%;
 }
 .txt-testimonial p{
-padding: 50px 20px 10px 15px;
+padding: 20px 20px 10px 15px;
 }
 div.testimonial p{
 margin-left:30%;
@@ -821,6 +836,18 @@ text-align: center;
 }
 .pricing-content {
 margin: 6.6rem auto;
+}
+#comparison .comparison-table-01 .row.feature .infos i.fa {
+	display:none;
+}
+#comparison .comparison-table-01 .row.feature .infos {
+	text-align: center;
+	font-weight: 800;
+	padding: 20px 0;
+	margin: 10px 0 0 0;
+}
+#comparison .comparison-table-01 .row.feature .ccfreature {
+  border: none;
 }
 .bgrid{
 position: relative;
@@ -1449,7 +1476,7 @@ position: relative;
 margin-top: 10%;
 }
 .txt-testimonial p{
-padding: 50px 20px 10px 15px;
+padding: 20px 20px 10px 15px;
 }
 div.testimonial p{
 margin-left: 20%;
