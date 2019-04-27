@@ -124,6 +124,12 @@ clear: both !important;
 margin-left: 0;
 margin-right: 0;
 }
+.theader {
+	min-height: 125px;
+}
+#comparison .comparison-table-01 .ptitle {
+	font-size: 1.5rem;
+}
 #comparison .comparison-table-01 .row.feature .infos i.fa {
 	display:none;
 }
@@ -836,6 +842,13 @@ text-align: center;
 }
 .pricing-content {
 margin: 6.6rem auto;
+}
+.theader {
+	min-height: 125px;
+}
+
+#comparison .comparison-table-01 .ptitle {
+	font-size: 1.5rem;
 }
 #comparison .comparison-table-01 .row.feature .infos i.fa {
 	display:none;
