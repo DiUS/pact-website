@@ -2769,8 +2769,8 @@ left: 15%;
 width: 90%;
 }
 div.fit-image {
-width:230px;
-height:284px;
+width:248px;
+/* height:284px; */
 position:relative;
 overflow:hidden;
 left: 30px;
@@ -2778,7 +2778,7 @@ left: 30px;
 div.fit-image > img {
 position:absolute;
 top:50%;
-min-height:100%;
+/* min-height:100%; */
 display:block;
 left:50%;
 -webkit-transform: translate(-50%, -50%);
@@ -4714,7 +4714,7 @@ padding-bottom: 10px;
 padding-top: 10px;
 color: #34495e;
 }
-#privacy p{
+#privacy p, #privacy ul li{
 font-family: 'Open Sans',sans-serif;
 font-size: 1.5rem;
 color: #9f9f9f;
@@ -6518,7 +6518,7 @@ color: #3c3c4e;
 font-family: 'Open Sans',sans-serif;
 font-size: 1.8rem;
 font-weight: 100;
-margin: 5% 0% 0% 0%;
+margin: 5% 0% 5% 0%;
 position: relative;
 width: 100%;
 color: #9f9f9f;
@@ -7744,4 +7744,36 @@ transition: 0.3s all ease;
 
 #mc_embed_signup, #mc_embed_signup form {
   padding: 0
+}
+
+.signup-complete {
+  display: none;
+}
+
+.contact-me .form-label, .contact-me input[type="checkbox"] {
+  display: inline-block;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: #78899f;
+  margin: 0% 0% 0% 1%;
+  margin-bottom: 2em;
+}
+
+.cnt-contact-bg span.domain {
+  font-size: 1.5rem;
+  color: #78899f;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 100;
+  position: relative;
+  float: right;
+  margin: -50px 3px 0 0;
+}
+
+.terms ul li, .privacy ul li  {
+  color:
+}
+
+#terms p strong, #privacy p strong {
+  font-weight: bold;
 }

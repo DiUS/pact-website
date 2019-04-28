@@ -1,4 +1,5 @@
-<section id="started">
+{% if page.signup != true %}
+<section id="started" class="{{ page.signup }}">
     <div class="cnt-started-bg">
         <div class="container">
             <div class="row">
@@ -10,13 +11,14 @@
                     <a href="/pricing/" class="btn btn-outlined">Compare Plans</a>
                 </div>
                 <div class="col-lg-2 action-started">
-                    <a href="/pricing/" class="btn btn-outlined highlight">Sign up</a>
+                    <a href="/sign-up/" class="btn btn-outlined highlight">Sign up</a>
                 </div>
               </div>
             </div>
         </div>
     </div>
   </section>
+{% endif %}
 <footer>
     <div class="footer-main">
       <div class="row">

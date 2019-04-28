@@ -329,11 +329,21 @@ width: 80%;
 	/* display: none; */
 }
 #integrations .tab-company{
-margin-left: 15%;
 margin-top: 15%;
 }
+#integrations .tab-company > div{
+min-height: 60px;
+}
+#integrations img.company-style {
+	display: inline-block;
+}
+
 #integrations p{
 width: 100%;
+}
+#integrations .tab-company .left-hdr{
+	margin: 2% auto;
+	text-align: center;
 }
 .questions-cnt h3{
 width: 95%;
@@ -1122,6 +1132,9 @@ position: relative;
 margin-top: 5%;
 margin-left: 0%;
 }
+#integrations .tab-company > div{
+	min-height: 60px;
+	}
 #integrations .tab-company .left-hdr{
 position: relative;
 margin: 2% auto;

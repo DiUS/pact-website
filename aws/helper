@@ -1,0 +1,61 @@
+export STACKUP_DOCKER_IMAGE="realestate/stackup:1.2.0"
+export AWS_DEFAULT_REGION="us-east-1"
+export TIME=$(date +%M%S)
+
+function get_stack_output {
+  STACK_NAME=$1
+  OUTPUT_KEY=$2
+  aws cloudformation describe-stacks --stack-name $STACK_NAME --output json | jq --raw-output '.Stacks[0].Outputs | .[] | select(.OutputKey=="'$OUTPUT_KEY'") | .OutputValue'
+}
+
+function get_stack_parameter {
+  STACK_NAME=$1
+  PARAMETER_KEY=$2
+  aws cloudformation describe-stacks --stack-name $STACK_NAME --output json | jq --raw-output '.Stacks[0].Parameters | .[] | select(.ParameterKey=="'$PARAMETER_KEY'") | .ParameterValue'
+}
+
+function log {
+  MESSAGE=$1
+  echo "INFO: [`date +"%T"`] ${MESSAGE}"
+}
+
+function log_empty_line {
+  echo ""
+}
+
+function verify_cloudformation {
+  CF_TEMPLATES=($@)
+
+  for TEMPLATE in "${CF_TEMPLATES[@]}"
+  do
+    log "Finding ${TEMPLATE}..."
+    log_empty_line
+    log "Validating Template ${DIR}/${TEMPLATE}"
+    aws cloudformation validate-template --template-body file://${DIR}/${TEMPLATE}
+    #log_empty_line
+    #log "Running cfn_nag_scan"
+    #cfn_nag_scan --input-path ${DIR}/${TEMPLATE}
+  done
+}
+
+function get_postgresql_password {
+  aws ssm get-parameter --name pact_postgresql_password --with-decryption  | jq -r .Parameter.Value
+}
+
+function get_buildkite_token {
+  aws ssm get-parameter --name pact_buildkite_token --with-decryption  | jq -r .Parameter.Value
+}
+
+function get_buildkite_agent_token {
+  aws ssm get-parameter --name pact_buildkite_agent_token --with-decryption  | jq -r .Parameter.Value
+}
+
+function get_buildkite_ami {
+  aws ssm get-parameter --name pact_buildkite_ami --with-decryption  | jq -r .Parameter.Value
+}
+
+# Check for creds for deployment
+if [ -d "${HOME}/.aws" ]; then
+  log "Mounting local ~/.aws/credentials"
+  AWS_CREDENTIALS_VOLUME="-v ${HOME}/.aws:/root/.aws "
+fi
