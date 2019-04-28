@@ -93,6 +93,8 @@ $('#requested_subdomain').on('blur', () => {
       $("#failure-alert").html("Hosted subdomain '" + $('#requested_subdomain').val() + " 'is unavailable, please try another");
       $("#failure-alert").fadeTo(2000, 200);
       $('#requested_subdomain').val('')
+    } else {
+      $("#failure-alert").hide()
     }
   })
 })
