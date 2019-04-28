@@ -1,5 +1,5 @@
 ---
-layout: other
+layout: pactflow
 title: Sign Up
 permalink: '/register/'
 signup: true
@@ -48,6 +48,8 @@ signup: true
 								<p>
 									<input type="text" id="company_url" name="company_url" class="textbox" placeholder="Company URL (http://... or https://...)" spellcheck="false" />
 								</p>
+								<div class="alert alert-danger" id="failure-alert" style="display: none"></div>
+								<div class="alert alert-info" id="info-alert" style="display: none"></div>
 								<p>
 									<input type="text" id="requested_subdomain" name="requested_subdomain" class="textbox" placeholder="Requested subdomain for your broker" spellcheck="false" required /><span class="domain">.pact.dius.com.au</span>
 								</p>
@@ -60,6 +62,10 @@ signup: true
 								<p>
 									<button class="btn btn-lg btn-primary btn-block btn-contact" type="submit">Submit</button>
 								</p>
+								<!-- not used on free plan yet -->
+                <input type="hidden" id="plan_id"  />
+                <input type="hidden" id="subscription_id"  />
+                <input type="hidden" id="invoice_id"  />
 							</fieldset>
 						</form>
 

@@ -10,10 +10,6 @@ Parameters:
     Description: HostedZone to attach the domain to
     Type: String
     Default: Z2KANQBPTUQA1W #pactflow.io
-  HostedZoneName:
-    Description: HostedZone to attach the domain to
-    Type: String
-    Default: pactflow.io
   HostName:
     Description: Domain name to host the website on
     Type: String
@@ -28,8 +24,7 @@ Resources:
         Type: AWS::S3::Bucket
         Properties:
            AccessControl: PublicRead
-           BucketName: !Sub ${Environment}-pactflow-website
-          #  BucketName: !Ref Hostname # TODO: re-enable this
+           BucketName: !Ref HostName
            WebsiteConfiguration:
               ErrorDocument: 404.html
               IndexDocument: index.html
@@ -48,7 +43,7 @@ Resources:
             DistributionConfig:
                 Origins:
                     - Id: only-origin
-                      DomainName: !Sub "${HostName}.s3-website-${AWS::Region}.amazonaws.com"
+                      DomainName: !Sub "${WebsiteBucket}.s3-website-${AWS::Region}.amazonaws.com"
                       CustomOriginConfig:
                         HTTPPort: '80'
                         HTTPSPort: '443'
@@ -67,17 +62,27 @@ Resources:
                     AcmCertificateArn: !Ref WebsiteCertificate
                     SslSupportMethod: sni-only
 
-    WebsiteDNSRecord:
+    OriginRecord:
       Type: AWS::Route53::RecordSet
       Properties:
-          HostedZoneName: !Ref 'HostedZoneName'
+          AliasTarget:
+            DNSName: !GetAtt WebsiteDistribution.DomainName
+            HostedZoneId: Z2FDTNDATAQYW2
+          HostedZoneId: !Ref 'HostedZone'
           Comment: DNS name for my instance.
-          Name: staging.pactflow.io
+          Name: !Ref HostName
           Type: A
-          TTL: '500'
-          ResourceRecords:
-          - !GetAtt WebsiteDistribution.DomainName
-          - !Sub 'www.${WebsiteDistribution.DomainName}'
+
+    WWWRecord:
+      Type: AWS::Route53::RecordSet
+      Properties:
+          AliasTarget:
+            DNSName: !GetAtt WebsiteDistribution.DomainName
+            HostedZoneId: Z2FDTNDATAQYW2
+          HostedZoneId: !Ref 'HostedZone'
+          Comment: DNS name for my instance.
+          Name: !Sub "www.${HostName}"
+          Type: A
 
 Outputs:
   CertificateArn:

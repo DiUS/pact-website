@@ -17,7 +17,7 @@ fi
 
 
 TEMPLATE="template.yaml"
-STACK_NAME="pact-broker-saas-${ENVIRONMENT}-website"
+STACK_NAME="pact-broker-saas-${ENVIRONMENT}-web"
 
 verify_cloudformation ${TEMPLATE}
 
