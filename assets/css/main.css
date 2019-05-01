@@ -7771,9 +7771,33 @@ transition: 0.3s all ease;
 }
 
 .terms ul li, .privacy ul li  {
-  color:
+  color: #9f9f9f;
 }
 
 #terms p strong, #privacy p strong {
   font-weight: bold;
+}
+
+#form-failure-alert {
+  margin: 20px 0;
+}
+
+.alert {
+  font-family: 'Open Sans',sans-serif;
+}
+
+.serverless #img-back-features .cnt-header-bg {
+background-image: none;
+}
+
+#img-feature.serverless {
+  margin-bottom: -80px
+}
+
+#img-feature.serverless .img-dashboard {
+  bottom: 440px;
+}
+
+#solutions.serverless #feature-item-01 {
+  margin-top: 0;
 }
