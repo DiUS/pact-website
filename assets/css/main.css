@@ -2187,12 +2187,15 @@ margin-right: 0px;
 height: 100px;
 }
 #img-feature .img-dashboard{
-position: relative;
-bottom:380px;
-margin: 0px auto;
-text-align: center;
-z-index: 10000;
+  position: relative;
+  bottom:380px;
+  margin: 0px auto;
+  text-align: center;
+  z-index: 10000;
 }
+            #img-feature .img-dashboard img{
+width: 800px;
+            }
 /*2.3 Why Choose Us */
 #solutions{
 position:relative;
