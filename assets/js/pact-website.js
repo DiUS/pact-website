@@ -11,13 +11,13 @@ $(document).ready(function(){
   // If on the complete signup page, pre-fill the form
   if (window.location.pathname === "/register/complete/") {
     if (urlParams.has('sub_id')) {
-      $("#subscription_id").val(urlParams.get('sub_id'))
+      $("#chargebee_subscription_id").val(urlParams.get('sub_id'))
     }
     if (urlParams.has('customer_id')) {
-      $("#customer_id").val(urlParams.get('customer_id'))
+      $("#chargebee_customer_id").val(urlParams.get('customer_id'))
     }
     if (urlParams.has('plan_id')) {
-      $("#plan_id").val(urlParams.get('plan_id'))
+      $("#chargebee_plan_id").val(urlParams.get('plan_id'))
     }
     if (urlParams.has('first_name')) {
       $("#first_name").val(urlParams.get('first_name'))
@@ -45,9 +45,9 @@ $(document).ready(function(){
       company_url: $('#company_url').val(),
       email: $('#email').val(),
       how_hear: $('#how_hear').val(),
-      plan_id: $('#plan_id').val(),
-      subscription_id: $('#subscription_id').val(),
-      customer_id: $('#customer_id').val(),
+      chargebee_plan_id: $('#chargebee_plan_id').val(),
+      chargebee_subscription_id: $('#chargebee_subscription_id').val(),
+      chargebee_customer_id: $('#chargebee_customer_id').val(),
       github_auth: $('#github_auth').prop('checked'),
       cognito_enabled: $('#cognito_enabled').prop('checked')
     }
