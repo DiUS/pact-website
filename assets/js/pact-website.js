@@ -3,11 +3,6 @@ $(document).ready(function(){
   var urlParams = new URLSearchParams(window.location.search);
 
   // Chargebee configurations
-  // Staging: https://staging.pactflow.io/register/complete/?sub_id={{subscription.id}}&customer_id={{invoice.id}}&plan_id={{plan.id}}&first_name={{customer.first_name}}&last_name={{customer.last_name}}&email={{customer.email}}&company={{customer.company}}/register/complete/?sub_id={{subscription.id}}&customer_id={{invoice.id}}&plan_id={{plan.id}}&first_name={{customer.first_name}}&last_name={{customer.last_name}}&email={{customer.email}}&company={{customer.company}}
-  // Prod: https://pactflow.io/register/complete/?sub_id={{subscription.id}}&customer_id={{invoice.id}}&plan_id={{plan.id}}&first_name={{customer.first_name}}&last_name={{customer.last_name}}&email={{customer.email}}&company={{customer.company}}/register/complete/?sub_id={{subscription.id}}&customer_id={{invoice.id}}&plan_id={{plan.id}}&first_name={{customer.first_name}}&last_name={{customer.last_name}}&email={{customer.email}}&company={{customer.company}}
-  // Local dev: http://localhost:4000/register/complete/?sub_id={{subscription.id}}&customer_id={{invoice.id}}&plan_id={{plan.id}}&first_name={{customer.first_name}}&last_name={{customer.last_name}}&email={{customer.email}}&company={{customer.company}}/register/complete/?sub_id={{subscription.id}}&customer_id={{invoice.id}}&plan_id={{plan.id}}&first_name={{customer.first_name}}&last_name={{customer.last_name}}&email={{customer.email}}&company={{customer.company}}
-  // http://localhost:4000/register/complete/?sub_id=1234&customer_id=5678&plan_id=team5&first_name=Matt&last_name=Fellows&email=m@onegeek.com.ua&company=test%20company
-
   // If on the complete signup page, pre-fill the form
   if (window.location.pathname === "/register/complete/") {
     if (urlParams.has('sub_id')) {
@@ -32,7 +27,6 @@ $(document).ready(function(){
       $("#company_name").val(urlParams.get('company'))
     }
   }
-
 
   $('#register-form').submit(function (event) {
     event.preventDefault();
