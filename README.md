@@ -1,10 +1,26 @@
 # Pact Saas Website
 
+* Static Pactflow product website
+* Cloudfront distribution
+* SSL certificate for secure website
+
+
+**NOTE #1: Because Matt is silly and didn't realise, he accidentally registered the domains in the _dev_ Pact account and therefore ALL deployments for all environments are in dev - TODO**
+
+**NOTE #2: Because Cloudfront + ACM only work together in us-east-1, the website is deployed into that region**
+
+
+
+## Environments
+
+* Production: pactflow.io (and www.pactflow.io)
+* Development: staging.pactflow.io
+
 ## Development team
 
 ### Install dependencies
 
-You'll either need `grunt` and `bundle` or `docker` installed.
+You'll  need `grunt`, `bundle` and `docker` installed.
 
 * NPM and Bundle:
 
@@ -35,6 +51,21 @@ $ JEKYLL_ENV=production bundle exec jekyll build
 ```
 
 ### Deploying
+
+#### Website deployments
+
+```
+ENVIRONMENT=dev ./shell/deploy.sh
+```
+
+#### Infrastructure deployments
+
+```sh
+cd aws
+ENVIRONMENT=dev deploy.sh`
+```
+
+#### Deploying - old
 
 * The buildkite build is currently failing for reasons unknown. To deploy, run all the scripts from `.buildkite/pipeline.yml` with the correct environment variables.
 * Then, invalidate the `pact-saas-ui` cloudfront cache here: https://console.aws.amazon.com/cloudfront/home?region=ap-southeast-2#distributions by selecting the `pact-saas` (dkpixpz9q6qga.cloudfront.net) row, then the `Invalidations` tab, then `Create Invalidation` for `/*`

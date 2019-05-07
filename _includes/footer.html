@@ -1,36 +1,98 @@
+{% if page.signup != true %}
+<section id="started" class="{{ page.signup }}">
+    <div class="cnt-started-bg">
+        <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-lg-8 action-started">
+                  <h2>Ready to get started?</h2>
+                </div>
+                <div class="col-lg-2 action-started">
+                    <a href="/pricing/" class="btn btn-outlined">Compare Plans</a>
+                </div>
+                <div class="col-lg-2 action-started">
+                    <a href="/sign-up/" class="btn btn-outlined highlight">Sign up</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </section>
+{% endif %}
 <footer>
-  <div class="footer-main">
-    <div class="row">
-      <div class="twitter-info">
-        <span class="social-icon-twitter">Follow <a href="https://twitter.com/pact_up">@pact_up</a> on Twitter</span>
+    <div class="footer-main">
+      <div class="row">
+        <div class="col-md-4 col-lg-4 footer-info">
+          <div class="footer-logo"></div>
+          <p>
+            Our vision is to transform the way teams test and release<br />
+            distributed systems. As the leading contract-testing<br />
+            collaboration platform we are making it easier than ever to<br />
+            test and deploy microservices, serverless functions and APIs.<br />
+          </p>
+        <div id="mc_embed_signup">
+          <form action="https://dius.us4.list-manage.com/subscribe/post?u=d975bc32fd84ad3580ed4777e&amp;id=62e27fa26f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Subscribe to our newsletter</label>
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d975bc32fd84ad3580ed4777e_62e27fa26f" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- /footer-info -->
+        <div class="col-md-2 col-lg-2 site-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/faq/">FAQs</a></li>
+            <li><a href="/terms/">Terms</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <!-- /site-links -->
+        <div class="col-md-2 col-lg-2 social-links">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="https://twitter.com/pactflow">Twitter</a></li>
+          </ul>
+        </div>
+        <!-- /social -->
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-subscribe">
+          <h5 class="contact-us-ft">Contact us</h5>
+          <ul class="contact">
+            <li>
+              <i class="pe-7s-map-marker"></i>Level 3, 31 Queen St Melbourne, VIC Australia
+            </li>
+            <li><i class="pe-7s-mail"></i><a  href="mailto:hello@pactflow.io">hello@pactflow.io</a></li>
+          </ul>
+        </div>
+        <!-- /subscribe -->
       </div>
-      <div class="email-info">
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-        <span>Drop us an email on <a href="mailto:pact@dius.com.au">pact@dius.com.au</a> or join us on <a href="https://slack.pact.io/">Slack</a></span>
-      </div>
+      <!-- /row -->
     </div>
-    <!-- /row -->
-  </div>
-  <!-- /footer-main -->
-  <div class="footer-bottom">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <!-- /footer-main -->
+    <div class="footer-bottom">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div class="copyright">
-          <span>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2019 - DiUS</span>
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+          <div class="copyright">
+            <span>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2019 -  Pactflow</span>
+          </div>
+          <div class="terms">
+            <span><a href="/terms/">Terms and Conditions</a></span>
+            <span><a href="/privacy/">Privacy Policy</a></span>
+          </div>
         </div>
-        <div class="terms">
-          <span><a href="/terms/" target="_blank">Terms and Conditions</a></span>
-        </div>
-        <div class="privacy">
-          <span><a href="/privacy/" target="_blank">Privacy</a></span>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 top-footer">
-        <div id="go-top">
-          <a class="smoothscroll" title="Back to Top" href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 top-footer">
+          <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#"
+              ><i class="fa fa-chevron-up" aria-hidden="true"></i
+            ></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- /footer-bottom -->
-</footer>
+    <!-- /footer-bottom -->
+  </footer>

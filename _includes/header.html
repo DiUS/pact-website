@@ -1,7 +1,29 @@
-<header>
-  <div class="row-header">
-    <div class="logo">
-      <a href="/" class="logo-light"></a>
+<header class="{{ page.class }}">
+    <div class="row-header">
+      <div class="logo">
+        <a href="/" class="logo-light"></a>
+      </div>
+      <nav id="main-nav-wrap">
+        <ul class="main-navigation">
+          <li><a class="smoothscroll" href="/" title="">home</a></li>
+          <li><a class="smoothscroll" href="/about/" title="">About</a></li>
+          <li><a class="smoothscroll" href="/pricing/" title="">Pricing</a></li>
+          <li class="highlight with-sep"><a href="/sign-up/" title="">Sign Up</a></li>
+        </ul>
+        <!-- Starts Mobile Menu -->
+        <ul class="main-navigation-mobile">
+          <li class="mobile-title">
+            <a href="/">Pages</a>
+            <ul class="mobile-content">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/pricing/">Pricing</a></li>
+              <li><a href="/sign-up/">Sign Up</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- End Mobile Menu -->
+      </nav>
+      <a class="menu-toggle" href="#"><span>Menu</span></a>
     </div>
-  </div>
-</header>
+  </header>

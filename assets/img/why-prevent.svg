@@ -1,0 +1,17 @@
+
+<svg width="72px" height="71px" viewBox="0 0 72 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="150.5 1693 163.057368 1700.25 163.057368 1714.75 150.5 1722 137.942632 1714.75 137.942632 1700.25"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pactflow-Homepage-Option-A-v2.0" transform="translate(-115.000000, -1667.000000)">
+            <polygon id="Polygon" stroke="#000000" stroke-width="10" points="150.5 1673 163.057368 1680 163.057368 1694 150.5 1701 137.942632 1694 137.942632 1680"></polygon>
+            <polygon id="Polygon-Copy-3" stroke="#000000" stroke-width="10" points="133 1704 145.124356 1711 145.124356 1725 133 1732 120.875644 1725 120.875644 1711"></polygon>
+            <polygon id="Polygon-Copy-6" stroke="#000000" stroke-width="10" points="169 1704 181.124356 1711 181.124356 1725 169 1732 156.875644 1725 156.875644 1711"></polygon>
+            <g id="Polygon-Copy-4">
+                <path stroke="#000000" stroke-width="9" d="M150.5,1698.19615 L142.442632,1702.84808 L142.442632,1712.15192 L150.5,1716.80385 L158.557368,1712.15192 L158.557368,1702.84808 L150.5,1698.19615 Z" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd"></path>
+                <path stroke="#FFFFFF" stroke-width="7" d="M150.5,1688.95855 L166.557368,1698.22927 L166.557368,1716.77073 L150.5,1726.04145 L134.442632,1716.77073 L134.442632,1698.22927 L150.5,1688.95855 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1440,6 +1440,19 @@ position: relative;
 top: 40px;
 text-align: left;
 }
+
+#solutions .btn-outlined{
+  height: 60px;
+  line-height: 60px;
+  border-radius: 60px;
+  font-weight: 700;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+  font-size:1.2rem;
+  padding: 0 35px;
+  min-width: 250px;
+  }
+
 /*2.4 Integrations */
 #integrations{
 position:relative;

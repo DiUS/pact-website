@@ -1,0 +1,6 @@
+
+{% if jekyll.environment == "prod" %}
+<script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="pactflow"> </script>
+{% else %}
+<script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="pactflow-test" ></script>
+{% endif %}

@@ -1,0 +1,426 @@
+/*
+MAIN COLOR:#5DDED8; (blue)
+*/
+
+/* - ELEMENTS
+================================================*/
+.template-color-pact .cnt-hero-content .cnt-btn,
+.template-color-pact #services .btn-outlined:hover,
+.template-color-pact #features .btn-outlined:hover,
+.template-color-pact #showcase .btn-outlined,
+.template-color-pact #workwithus  .cnt-btn:hover,
+.template-color-pact #post-blog .btn-outlined,
+.template-color-pact #post-blog #footer-blog .pager li a:hover,
+.template-color-pact #post-blog #footer-blog-right .pager li a:hover,
+.template-color-pact #post-blog #footer-blog-left .pager li a:hover,
+.template-color-pact .hero-blog-post .btn-outlined:hover,
+.template-color-pact #subscribe-blog .btn-subscribe,
+.template-color-pact .blog-comment .btn.btn-comment,
+.template-color-pact .hero-faq .btn-outlined:hover,
+.template-color-pact .hero-privacy .btn-outlined:hover,
+.template-color-pact .hero-comparisonchart .btn-outlined:hover,
+.template-color-pact .hero-contact .btn-outlined:hover,
+.template-color-pact  .main-navigation li a:hover,
+.template-color-pact  #hero-4  .cnt-btn:hover,
+.template-color-pact .container-right-sidebar .social-icon-holder-twitter:hover,
+.template-color-pact .container-right-sidebar .social-icon-holder-facebook:hover,
+.template-color-pact .container-right-sidebar .social-icon-holder-mail:hover,
+.template-color-pact .container-right-sidebar .social-icon-holder-rss:hover,
+.template-color-pact .container-left-sidebar .social-icon-holder-twitter:hover,
+.template-color-pact .container-left-sidebar .social-icon-holder-facebook:hover,
+.template-color-pact .container-left-sidebar .social-icon-holder-mail:hover,
+.template-color-pact .container-left-sidebar .social-icon-holder-rss:hover,
+.template-color-pact .pricing-content .price-block .button:hover,
+.template-color-pact .pricing-content .price-block .button:focus,
+.template-color-pact .btn-comparison:hover,
+.template-color-pact .btn-comparison:focus,
+.template-color-pact .cnt-contact-bg .data-contact i:hover,
+.template-color-pact .cnt-contact-bg .data-contact-mobile i:hover,
+.template-color-pact  .hero-services  .cnt-btn:hover,
+.template-color-pact  .hero-services  .cnt-btn,
+.template-color-pact .hero-error .btn-outlined:hover,
+.template-color-pact #sblog .btn-outlined:hover,
+.template-color-pact .main-navigation-mobile ul.mobile-content li a,
+.template-color-pact #how-it-works .tab-nav a:hover,
+.template-color-pact #how-it-works .tab-nav a.active,
+.template-color-pact .container-left-sidebar .tag-cloud .tag:hover,
+.template-color-pact .hero-careers .btn-outlined:hover,
+.template-color-pact #hiring .job-position .button
+{
+color: #fff;
+}
+
+.template-color-pact .site-links li a:hover,
+.template-color-pact .cnt-btn,
+.template-color-pact .cnt-btn:hover,
+.template-color-pact #services .btn-outlined,
+.template-color-pact #features .btn-outlined,
+.template-color-pact #started .btn-outlined:hover,
+.template-color-pact #solutions h2.key-features,
+.template-color-pact #solutions .item-feature i,
+.template-color-pact #solutions .learn-more:hover,
+.template-color-pact #solutions #feature-item-01 h2,
+.template-color-pact .between-words,
+.template-color-pact #services i,
+.template-color-pact #features .container b,
+.template-color-pact #features .icon-box .icon i:hover,
+.template-color-pact .left-icon-text h2,
+.template-color-pact #stats i,
+.template-color-pact .subscribe-form input[type="text"]:focus,
+.template-color-pact .subscribe-coming .subscribe-form input[type="text"]:focus,
+.template-color-pact .widget ul li a:hover,
+.template-color-pact #get-quote .btn-outlined:hover,
+.template-color-pact #intro-about h3.what-we-do,
+.template-color-pact .team-list .team-detail h2,
+.template-color-pact .team-detail .social:hover,
+.template-color-pact #workwithus  .cnt-btn.active-btn:hover,
+.template-color-pact #login-form .btn.btn-signin:hover,
+.template-color-pact #login-form .btn.btn-signin:active,
+.template-color-pact #login-form .btn.btn-signin:focus,
+.template-color-pact #login-form .forgot-password:hover,
+.template-color-pact #login-form .forgot-password:active,
+.template-color-pact #login-form .forgot-password:focus,
+.template-color-pact #register .btn.btn-signup:hover,
+.template-color-pact #register .btn.btn-signup:active,
+.template-color-pact #register .btn.btn-signup:focus,
+.template-color-pact #post-blog .btn:hover,
+.template-color-pact .hero-blog-post .btn-outlined,
+.template-color-pact .left-post i:hover,
+.template-color-pact .right-post i:hover,
+.template-color-pact #subscribe-blog .btn-subscribe:hover,
+.template-color-pact .main-navigation li.highlight a,
+.template-color-pact .main-navigation li a:hover,
+.template-color-pact .main-navigation li.current a.current-sticky,
+.template-color-pact .blog-comment .text-success,
+.template-color-pact .blog-comment .media-body a,
+.template-color-pact .blog-comment .btn.btn-comment:hover,
+.template-color-pact .blog-comment .btn.btn-comment:active,
+.template-color-pact .blog-comment .btn.btn-comment:focus,
+.template-color-pact footer h4,
+.template-color-pact footer h5,
+.template-color-pact .footer-main ul a:hover,
+.template-color-pact .footer-main ul a:focus,
+.template-color-pact .hero-faq .btn-outlined,
+.template-color-pact .hero-privacy .btn-outlined,
+.template-color-pact .hero-comparisonchart .btn-outlined,
+.template-color-pact .hero-contact .btn-outlined,
+.template-color-pact #hero-4 .cnt-btn.active-btn:hover,
+.template-color-pact .main-navigation li.current > a,
+.template-color-pact .cnt-hero-content .cnt-btn:hover,
+.template-color-pact .container-right-sidebar .social-icon-holder-twitter,
+.template-color-pact .container-right-sidebar .social-icon-holder-facebook,
+.template-color-pact .container-right-sidebar .social-icon-holder-mail,
+.template-color-pact .container-right-sidebar .social-icon-holder-rss,
+.template-color-pact .container-left-sidebar .social-icon-holder-twitter,
+.template-color-pact .container-left-sidebar .social-icon-holder-facebook,
+.template-color-pact .container-left-sidebar .social-icon-holder-mail,
+.template-color-pact .container-left-sidebar .social-icon-holder-rss,
+.template-color-pact .pricing-content .price-block .button,
+.template-color-pact .btn-comparison,
+.template-color-pact .contact-me .btn.btn-contact:hover,
+.template-color-pact .contact-me .btn.btn-contact:active,
+.template-color-pact .contact-me .btn.btn-contact:focus,
+.template-color-pact .cnt-contact-bg .data-contact i,
+.template-color-pact .cnt-contact-bg .data-contact ul.data-content,
+.template-color-pact .cnt-contact-bg .data-contact-mobile i,
+.template-color-pact .cnt-contact-bg .data-contact-mobile ul.data-content,
+.template-color-pact .hero-services .cnt-btn.active-btn:hover,
+.template-color-pact #showcase .btn-outlined:hover,
+.template-color-pact .hero-error .btn-outlined,
+.template-color-pact #sblog .btn-outlined,
+.template-color-pact #services .container p.title-txt,
+.template-color-pact #go-top a i:hover,
+.template-color-pact .main-navigation-mobile li.mobile-title a,
+.template-color-pact .main-navigation-mobile ul.mobile-content li a:hover,
+.template-color-pact #sblog .cnt-post ul.data-post li.separator-post,
+.template-color-pact #sblog .cnt-post ul.data-post li.category,
+.template-color-pact #sblog .cnt-post  .read-more,
+.template-color-pact .footer-main .footer-subscribe ul.contact li i,
+.template-color-pact #allservices i,
+.template-color-pact #how-it-works .tab-nav a,
+.template-color-pact #how-it-works .tab-nav a.active:hover,
+.template-color-pact .tab-content .tab-content-txt ul.list-slider li i,
+.template-color-pact #showcase .showcase-content h2,
+.template-color-pact #showcase .showcase-content ul.showcase-list li i,
+.template-color-pact .searchbutton:hover, .searchbutton:focus,
+.template-color-pact .searchbutton:active,
+.template-color-pact .container-right-sidebar .archives div.cnt-sidebar li span,
+.template-color-pact .container-left-sidebar .archives div.cnt-sidebar li span,
+.template-color-pact .container-right-sidebar .popular-posts .top_post_right h2,
+.template-color-pact .container-left-sidebar .popular-posts .top_post_left h2,
+.template-color-pact .clicked-filter,
+.template-color-pact #login-form .sign-now span,
+.template-color-pact .container-right-sidebar ul.archive-children li a:hover,
+.template-color-pact .container-left-sidebar ul.archive-children li a:hover,
+.template-color-pact .hero-careers .btn-outlined,
+.template-color-pact #hiring .job-position .button:hover,
+.template-color-pact #register h4 span,
+.template-color-pact .cnt-herocoming-content #clock p.clock,
+.template-color-pact .cfeature-first i:hover,
+.template-color-pact .cfeature i:hover
+{
+color: #5DDED8;
+}
+.template-color-pact .main-header .btn-outlined,
+.template-color-pact #services .btn-outlined,
+.template-color-pact #features .btn-outlined,
+.template-color-pact #showcase .btn-outlined,
+.template-color-pact #get-quote .btn-outlined,
+.template-color-pact .subscribe-form input[type="text"]:focus,
+.template-color-pact .subscribe-coming .subscribe-form input[type="text"]:focus,
+.template-color-pact #login-form .btn.btn-signin:hover,
+.template-color-pact #login-form .btn.btn-signin:active,
+.template-color-pact #login-form .btn.btn-signin:focus,
+.template-color-pact #register .btn.btn-signup:hover,
+.template-color-pact #register .btn.btn-signup:active,
+.template-color-pact #register .btn.btn-signup:focus,
+.template-color-pact #post-blog .btn:hover,
+.template-color-pact #subscribe-blog .btn-subscribe,
+.template-color-pact .form-control-newsletter:focus,
+.template-color-pact .tag li,
+.template-color-pact .blog-comment textarea:focus,
+.template-color-pact .blog-comment .btn.btn-comment:hover,
+.template-color-pact .blog-comment .btn.btn-comment:active,
+.template-color-pact .blog-comment .btn.btn-comment:focus,
+.template-color-pact .footer-main .footer-subscribe .subscribe-form input[type="email"]:focus,
+.template-color-pact #accordion .panel,
+.template-color-pact .contact-me .btn.btn-contact:hover,
+.template-color-pact .contact-me .btn.btn-contact:active,
+.template-color-pact .contact-me .btn.btn-contact:focus,
+.template-color-pact #sblog .btn-outlined,
+.template-color-pact #how-it-works .tab-nav a,
+.template-color-pact #how-it-works .tab-nav a.active
+.template-color-pact .init-filter,
+.template-color-pact .clicked-filter,
+.template-color-pact .container-left-sidebar .tag-cloud .tag:hover,
+.template-color-pact .container-right-sidebar .tag-cloud .tag:hover,
+.template-color-pact .hero-careers .btn-outlined
+{
+border: 1px solid #5DDED8;
+}
+.template-color-pact .main-header .btn-outlined:hover,
+.template-color-pact .cnt-hero-content .cnt-btn,
+.template-color-pact #services .btn-outlined:hover,
+.template-color-pact #features .btn-outlined:hover,
+.template-color-pact #showcase .btn-outlined,
+.template-color-pact #get-quote .btn-outlined,
+.template-color-pact .hero-mat,
+.template-color-pact .cnt-started-bg,
+.template-color-pact .btn-special,
+.template-color-pact .btn-special:hover,
+.template-color-pact #workwithus .cnt-btn.active-btn,
+.template-color-pact #workwithus  .cnt-btn:hover,
+.template-color-pact .login-pg,
+.template-color-pact #login-form .btn.btn-signin,
+.template-color-pact #register .btn.btn-signup,
+.template-color-pact #post-blog .btn-outlined,
+.template-color-pact #post-blog #footer-blog .pager li a:hover,
+.template-color-pact #post-blog #footer-blog-right .pager li a:hover,
+.template-color-pact #post-blog #footer-blog-left .pager li a:hover,
+.template-color-pact .hero-blog-post .btn-outlined:hover,
+.template-color-pact #subscribe-blog .btn-subscribe,
+.template-color-pact .main-navigation li.current a::after,
+.template-color-pact .tag li:hover,
+.template-color-pact .blog-comment .btn.btn-comment,
+.template-color-pact .hero-faq .btn-outlined:hover,
+.template-color-pact .hero-privacy .btn-outlined:hover,
+.template-color-pact .hero-comparisonchart .btn-outlined:hover,
+.template-color-pact .hero-contact .btn-outlined:hover,
+.template-color-pact #hero-4 .cnt-btn.active-btn,
+.template-color-pact #hero-4  .cnt-btn:hover,
+.template-color-pact .hero--slider .slick-dots .slick-active button,
+.template-color-pact .container-right-sidebar .social-icon-holder-twitter:hover,
+.template-color-pact .container-right-sidebar .social-icon-holder-facebook:hover,
+.template-color-pact .container-right-sidebar .social-icon-holder-mail:hover,
+.template-color-pact .container-right-sidebar .social-icon-holder-rss:hover,
+.template-color-pact .container-left-sidebar .social-icon-holder-twitter:hover,
+.template-color-pact .container-left-sidebar .social-icon-holder-facebook:hover,
+.template-color-pact .container-left-sidebar .social-icon-holder-mail:hover,
+.template-color-pact .container-left-sidebar .social-icon-holder-rss:hover,
+.template-color-pact .pricing-content .price-block .button:hover,
+.template-color-pact .pricing-content .price-block .button:focus,
+.template-color-pact .btn-comparison:hover,
+.template-color-pact .btn-comparison:focus,
+.template-color-pact #main-nav-wrap ul.main-navigation ul.dropdown-blog,
+.template-color-pact #main-nav-wrap ul.main-navigation ul.dropdown,
+.template-color-pact .contact-me .btn.btn-contact,
+.template-color-pact .hero-services .cnt-btn.active-btn,
+.template-color-pact .hero-services  .cnt-btn:hover,
+.template-color-pact .slidenow .slick-dots .slick-active button,
+.template-color-pact .hero-error .btn-outlined:hover,
+.template-color-pact #sblog .btn-outlined:hover,
+.template-color-pact #sblog .cnt-blog-wg .cnt-post .fit_image img,
+.template-color-pact #how-it-works .tab-nav a.active,
+.template-color-pact #how-it-works .tab-nav a:hover,
+.template-color-pact .center-tab .video,
+.template-color-pact .center-tab .video .overlay-video,
+.template-color-pact .searchbox:focus, .searchbox:hover,
+.template-color-pact .searchbox:focus + .searchbutton, .searchbox:hover + .searchbutton,
+.template-color-pact .init-filter,
+.template-color-pact #post-blog .container-post .data-post-main,
+.template-color-pact .container-left-sidebar .tag-cloud .tag:hover,
+.template-color-pact .container-right-sidebar .tag-cloud .tag:hover,
+.template-color-pact .hero-careers .btn-outlined:hover,
+.template-color-pact #hiring .job-position .button,
+.template-color-pact .cnt-herocoming-content #clock span
+{
+background: #5DDED8;
+}
+.template-color-pact .cnt-hero-content .cnt-btn,
+.template-color-pact #workwithus .cnt-btn.active-btn,
+.template-color-pact #workwithus .cnt-btn:hover,
+.template-color-pact #post-blog #footer-blog .pager li a:hover,
+.template-color-pact #post-blog #footer-blog-right .pager li a:hover,
+.template-color-pact #post-blog #footer-blog-left .pager li a:hover,
+.template-color-pact .hero-blog-post .btn-outlined,
+.template-color-pact .hero-faq .btn-outlined,
+.template-color-pact .hero-privacy .btn-outlined,
+.template-color-pact .hero-comparisonchart .btn-outlined,
+.template-color-pact .hero-contact .btn-outlined,
+.template-color-pact #hero-4 .cnt-btn.active-btn,
+.template-color-pact #hero-4 .cnt-btn:hover,
+.template-color-pact .container-right-sidebar .social-icon-holder-twitter,
+.template-color-pact .container-right-sidebar .social-icon-holder-facebook,
+.template-color-pact .container-right-sidebar .social-icon-holder-mail,
+.template-color-pact .container-right-sidebar .social-icon-holder-rss,
+.template-color-pact .container-left-sidebar .social-icon-holder-twitter,
+.template-color-pact .container-left-sidebar .social-icon-holder-facebook,
+.template-color-pact .container-left-sidebar .social-icon-holder-mail,
+.template-color-pact .container-left-sidebar .social-icon-holder-rss,
+.template-color-pact .pricing-content .price-block,
+.template-color-pact .pricing-content .price-block .button,
+.template-color-pact .pricing-content .primary,
+.template-color-pact .btn-comparison,
+.template-color-pact .hero-services .cnt-btn.active-btn,
+.template-color-pact .hero-services .cnt-btn:hover,
+.template-color-pact .hero-error .btn-outlined,
+.template-color-pact #sblog .cnt-blog-wg .cnt-post,
+.template-color-pact #register input:focus,
+.template-color-pact #hiring .job-position .button,
+.template-color-pact #hiring .job-position .button:hover,
+.template-color-pact #hiring .job-position
+{
+border:2px solid #5DDED8;
+}
+.template-color-pact hr.question,
+.template-color-pact #login-form .form-signin .form-control:focus,
+.template-color-pact hr.title-sidebar,
+.template-color-pact .contact-me input[type="text"]:focus,
+.template-color-pact .contact-me textarea:focus,
+.template-color-pact .contact-me input[type="email"]:focus
+{
+border-color:#5DDED8;
+}
+.template-color-pact .txt-testimonial:before
+{
+border-color: #34495e #fff;
+
+}
+.template-color-pact #get-quote .btn-outlined:hover,
+.template-color-pact #workwithus  .cnt-btn.active-btn:hover,
+.template-color-pact #login-form .btn.btn-signin:hover,
+.template-color-pact #login-form .btn.btn-signin:active,
+.template-color-pact #login-form .btn.btn-signin:focus,
+.template-color-pact #register .btn.btn-signup:hover,
+.template-color-pact #register .btn.btn-signup:active,
+.template-color-pact #register .btn.btn-signup:focus,
+.template-color-pact #hero-4 .cnt-btn.active-btn:hover,
+.template-color-pact #post-blog .btn:hover,
+.template-color-pact #subscribe-blog .btn-subscribe:hover,
+.template-color-pact .blog-comment .btn.btn-comment:hover,
+.template-color-pact .footer-main .footer-subscribe .subscribe-form input[type="email"]:focus,
+.template-color-pact .cnt-hero-content .cnt-btn:hover,
+.template-color-pact .contact-me .btn.btn-contact:hover,
+.template-color-pact .contact-me .btn.btn-contact:active,
+.template-color-pact .contact-me .btn.btn-contact:focus,
+.template-color-pact .hero-services .cnt-btn.active-btn:hover,
+.template-color-pact #showcase .btn-outlined:hover,
+.template-color-pact #how-it-works .tab-nav a.active:hover,
+.template-color-pact .clicked-filter,
+.template-color-pact #hiring .job-position .button:hover
+{
+background: transparent;
+}
+.template-color-pact .fit-image:after
+{
+background:#5DDED8;
+opacity: 0.6;
+
+}
+.template-color-pact .error-path
+{
+fill:#5DDED8;
+}
+.template-color-pact #wearein #mapa:hover
+{
+fill:#5DDED8;
+transition: 200ms;
+transition-timing-function: ease-in-out;
+-webkit-transition: 200ms;
+-webkit-transition-timing-function: ease-in-out;
+cursor: pointer;
+}
+/* .template-color-pact .theader,
+.template-color-pact .cfeature-first
+{
+border-top: 1px solid #5DDED8;
+}
+.template-color-pact .cfeature,
+.template-color-pact .cfeature-first,
+.template-color-pact .free,
+.template-color-pact .theader.free,
+.template-color-pact .standard,
+.template-color-pact .theader.standard,
+.template-color-pact .premium,
+.template-color-pact .theader.premium
+{
+border-bottom: 1px solid #5DDED8;
+}
+.template-color-pact .cfeature,
+.template-color-pact .cfeature-first,
+.template-color-pact .free,
+.template-color-pact .standard
+{
+border-left: 1px solid #5DDED8;
+}
+.template-color-pact .standard,
+.template-color-pact .premium
+{
+border-right: 1px solid #5DDED8;
+} */
+.template-color-pact .cnt-contact-bg .data-contact
+{
+border-top: 15px solid #5DDED8;
+}
+.template-color-pact .cnt-contact-bg .data-contact
+{
+border-bottom: 15px solid #5DDED8;
+}
+
+/* Customisations */
+.template-color-pact #solutions #feature-item-01 h3
+{
+color: #000000;
+}
+
+.template-color-pact .pricing-content .price-block .plan-title::after {
+  color: #ffffff;
+}
+.template-color-pact .pricing-content .price-block .plan-title {
+  color: #ffffff;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.pricing-content .primary .top-part, .pricing-content .price-block .top-part {
+  background: #5DDED8;
+  color: #ffffff;
+  }
+
+
+.template-color-pact .pricing-content .primary .top-part::before {
+  background-color: #000000
+}
+.pe-7s-check {
+  color: #5DDED8;
+}
