@@ -8,7 +8,7 @@ else
   AWS_S3_BUCKET="s3://pactflow.io"
 fi
 
-JEKYLL_ENV=${ENVIRONMENT} jekyll build
+JEKYLL_ENV=${ENVIRONMENT} bundle exec jekyll build
 
 aws s3 sync ./public/ $AWS_S3_BUCKET \
   --acl public-read \
