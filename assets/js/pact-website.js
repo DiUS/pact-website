@@ -42,7 +42,7 @@ $(document).ready(function(){
       chargebee_plan_id: $('#chargebee_plan_id').val(),
       chargebee_subscription_id: $('#chargebee_subscription_id').val(),
       chargebee_customer_id: $('#chargebee_customer_id').val(),
-      github_auth: $('#github_auth').prop('checked'),
+      github_org_auth: $('#github_org_auth').prop('checked'),
       cognito_enabled: $('#cognito_enabled').prop('checked')
     }
 
