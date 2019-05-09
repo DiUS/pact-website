@@ -67,6 +67,9 @@ signup: true
 									<input type="text" id="how_hear" name="how_hear" class="textbox" placeholder="How did you hear about us?" spellcheck="false" />
 								</p>
 								<p>
+									<input type="checkbox" id="github_org_auth" name="github_org_auth" class="textbox"/><label class="form-label" for="github_org_auth">I want to use my company's Github organization to log in</label>
+								</p>
+								<p>
 									<input type="checkbox" id="agree_terms" name="agree_terms" class="textbox" placeholder="I agree to Terms and conditions of Pact." required /><label class="form-label" for="agree_terms">By signing up, you agree to our <a href="/terms" target="_blank"> Terms of Use</a></label>
 								</p>
 								<p>
@@ -75,7 +78,6 @@ signup: true
                 <input type="hidden" id="chargebee_plan_id"  />
                 <input type="hidden" id="chargebee_subscription_id"  />
                 <input type="hidden" id="chargebee_customer_id"  />
-                <input class="hidden" type="checkbox" id="cognito_enabled" checked="checked"  />
 							</fieldset>
 						</form>
 						<div class="alert alert-danger" id="form-failure-alert-bottom" style="display: none"></div>
