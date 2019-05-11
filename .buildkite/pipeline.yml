@@ -5,6 +5,7 @@ env:
 
 steps:
   - command: |-
+      ./shell/bundle.sh
       ./shell/deploy.sh
     label: ':rocket: Deploy staging.pactflow.io'
     env:

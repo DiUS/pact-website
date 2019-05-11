@@ -8,8 +8,6 @@ else
   AWS_S3_BUCKET="s3://pactflow.io"
 fi
 
-./bundle.sh
-
 export JEKYLL_VERSION=3.8
 docker run --rm \
   -e JEKYLL_ENV=${ENVIRONMENT} \
