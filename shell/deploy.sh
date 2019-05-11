@@ -2,15 +2,13 @@
 
 set -e
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
 if [ "${ENVIRONMENT}" == "dev" ]; then
   AWS_S3_BUCKET="s3://staging.pactflow.io"
 else
   AWS_S3_BUCKET="s3://pactflow.io"
 fi
 
-./${DIR}/build.sh
+./bundle.sh
 
 export JEKYLL_VERSION=3.8
 docker run --rm \
