@@ -1,3 +1,4 @@
 .buildkite
 .git
 shell/
+aws/

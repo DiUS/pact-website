@@ -2,7 +2,7 @@
 
 set -e
 
-docker run -v $(pwd)/.:/app node:8.1-alpine  /bin/ash -c '
+docker run -v $(pwd)/.:/app node:10-alpine  /bin/ash -c '
 apk update && apk upgrade && apk add --no-cache bash git openssh
 cd /app
 # javascript stuff
