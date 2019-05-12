@@ -2,7 +2,7 @@
 
 set -ex
 
-docker run -v $(pwd)/.:/app -e JEKYLL_ENV=${JEKYLL_ENV} ruby:2.3-alpine  /bin/ash -c '
+docker run -v $(pwd)/.:/app -e JEKYLL_ENV=${JEKYLL_ENV} ruby:2.4-alpine  /bin/ash -c '
 apk add --update --no-cache build-base
 cd /app
 bundle

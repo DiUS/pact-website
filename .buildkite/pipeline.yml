@@ -16,6 +16,7 @@ steps:
   - block: ":rocket: Release!"
 
   - command: |-
+      ./shell/bundle.sh
       ./shell/deploy.sh
     label: ':rocket: Production Deploy - pactflow.io'
     env:
