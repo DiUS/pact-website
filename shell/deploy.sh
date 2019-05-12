@@ -8,15 +8,9 @@ else
   AWS_S3_BUCKET="s3://pactflow.io"
 fi
 
-echo $(whoami)
-echo ${UID}
-if [[ "$CI" == "true" ]];
-then
-  sudo chown -R 1000:1000 $PWD
-fi
-
 export JEKYLL_VERSION=3.8
 docker run --rm \
+  --user root \
   -e JEKYLL_ENV=${ENVIRONMENT} \
   --volume="$PWD:/srv/jekyll" \
   -it jekyll/jekyll:$JEKYLL_VERSION \
