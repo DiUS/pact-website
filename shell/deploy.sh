@@ -12,7 +12,7 @@ echo $(whoami)
 echo ${UID}
 if [[ "$CI" == "true" ]];
 then
-  chown -R 1000:1000 $PWD
+  sudo chown -R 1000:1000 $PWD
 fi
 
 export JEKYLL_VERSION=3.8
