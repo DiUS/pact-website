@@ -14,7 +14,7 @@ docker run --rm \
   -e JEKYLL_ENV=${ENVIRONMENT} \
   --volume="$PWD:/srv/jekyll" \
   -it jekyll/jekyll:$JEKYLL_VERSION \
-  bash -c 'ls -al; jekyll doctor && jekyll build'
+  bash -c 'ls -al; chown -R jekyll:jekyll /srv/jekyll && jekyll doctor && jekyll build'
 
 aws s3 sync ./public/ $AWS_S3_BUCKET \
   --acl public-read \
