@@ -14,10 +14,9 @@ echo ${UID}
 export JEKYLL_VERSION=3.8
 docker run --rm \
   -e JEKYLL_ENV=${ENVIRONMENT} \
-  -e JEKYLL_UID=${UID} \
   --volume="$PWD:/srv/jekyll" \
   -it jekyll/jekyll:$JEKYLL_VERSION \
-  jekyll build
+  bash -c 'ls -al; jekyll doctor && jekyll build'
 
 aws s3 sync ./public/ $AWS_S3_BUCKET \
   --acl public-read \
