@@ -10,7 +10,10 @@ fi
 
 echo $(whoami)
 echo ${UID}
-chown -R 1000:1000 $PWD
+if [[ "$CI" == "true" ]];
+then
+  chown -R 1000:1000 $PWD
+fi
 
 export JEKYLL_VERSION=3.8
 docker run --rm \
