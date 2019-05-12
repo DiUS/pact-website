@@ -8,9 +8,13 @@ else
   AWS_S3_BUCKET="s3://pactflow.io"
 fi
 
+echo $(whoami)
+echo ${UID}
+
 export JEKYLL_VERSION=3.8
 docker run --rm \
   -e JEKYLL_ENV=${ENVIRONMENT} \
+  -e JEKYLL_UID=${UID} \
   --volume="$PWD:/srv/jekyll" \
   -it jekyll/jekyll:$JEKYLL_VERSION \
   jekyll build
