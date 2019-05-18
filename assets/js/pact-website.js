@@ -86,6 +86,9 @@ $(document).ready(function(){
   })
 
   $('#requested_subdomain').on('blur', () => {
+    var subdomain = $('#requested_subdomain').val().replace(/[^\w-]/gi, '').toLowerCase();
+
+    $('#requested_subdomain').val(subdomain)
     $.ajax({
       type: 'GET',
       url: REGISTRATIONS_GATEWAY_URL + '/subdomain/' + $('#requested_subdomain').val(),

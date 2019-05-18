@@ -81,3 +81,8 @@ ENVIRONMENT=dev deploy.sh`
 - [Markdown Basics](https://help.github.com/articles/markdown-basics/)
 - [Gihub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
 - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
+## Testing Chargebee
+
+* Set `var REGISTRATIONS_GATEWAY_URL = 'http://localhost:9292/api/registrations'` in `register.html` and `complete.html` to point to your localhost
+* Head to http://localhost:4000/register/complete/?sub_id=2smoc99AROwhyeD10Zi&customer_id=1mkVvxxROwguIS5Pf&plan_id=team-5&first_name=Matt&last_name=Fellows&email=mfellows@dius.com.au&company=test%20company which should pre-fill the completion form with an example working subscription (Test Chargebee)
