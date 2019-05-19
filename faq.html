@@ -24,51 +24,52 @@ permalink: '/faq/'
                 <h2>General</h2>
                 <p>Questions about the product and use cases</p>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
-                        <div class="col-sm-6 col-md-6 col-lg-6">
-                            <h3>What is Pactflow?</h3>
-                            <hr class="question" />
-                            <p>Pactflow allows teams to increase their application quality and time-to-market by speeding up the release cycle for large-scale integrated systems. Whether you build microservices, messaging systems or cloud native (e.g. lambdas) systems, Developers and Testers can write simple, isolated unit tests for each integration in their application and generate API contracts that are guaranteed to be up-to-date with their code, ensuring all dependencies are always compatible.</p>
-                            <p>This unit test approach is simpler, faster and more reliable than traditional end-to-end acceptance tests for a variety of use cases, and can be integrated easily into a holistic testing strategy.</p>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6">
-                            <h3>Who should use Pactflow and why?</h3>
-                            <hr class="question" />
-                            <p>Pactflow is designed for developers, QA teams and engineering managers who are building, testing and supporting distributed systems - such as web applications based on a microservices architecture. </p>
-                            <p>Modern product engineering typically involves numerous, often distributed teams, requiring an effective collaborative workflow to evolve the design of their APIs.</p>
-                            <p>Pactflow addresses this challenge, by enabling a seamless workflow to share contracts between teams, visualise their dependencies and integrate their CI, whilst reducing the administrative burden of managing extra servers for tooling.</p>
-                        </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <h3>What is Pactflow?</h3>
+                        <hr class="question" />
+                        <p>At its core, Pact is a managed version of the Open Source <a href="https://github.com/pact-foundation/pact_broker">Pact Broker</a>, with added features for teams and enterprises looking to scale their contract testing.</p>
+                        <p>Pactflow allows teams to increase their application quality and time-to-market by speeding up the release cycle for large-scale integrated systems. Whether you build microservices, messaging systems or cloud native (e.g. lambdas) systems, Developers and Testers can write simple, isolated unit tests for each integration in their application and generate API contracts that are guaranteed to be up-to-date with their code, ensuring all dependencies are always compatible.</p>
+                        <p>This unit test approach is simpler, faster and more reliable than traditional end-to-end acceptance tests for a variety of use cases, and can be integrated easily into a holistic testing strategy.</p>
                     </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <h3>Who should use Pactflow and why?</h3>
+                        <hr class="question" />
+                        <p>Pactflow is designed for developers, QA teams and engineering managers who are building, testing and supporting distributed systems - such as web applications based on a microservices architecture. </p>
+                        <p>Modern product engineering typically involves numerous, often distributed teams, requiring an effective collaborative workflow to evolve the design of their APIs.</p>
+                        <p>Pactflow addresses this challenge, by enabling a seamless workflow to share contracts between teams, visualise their dependencies and integrate their CI, whilst reducing the administrative burden of managing extra servers for tooling.</p>
+                    </div>
+                </div>
 
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
-                        <div class="col-sm-6 col-md-6 col-lg-6">
-                            <h3>What are some typical use cases?</h3>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <h3>What are some typical use cases?</h3>
+                        <hr class="question" />
+                        <ul>
+                            <li>HTTP based API microservice architectures</li>
+                            <li>Event based architectures based on message queue and publish-subscribe, such as Kafka, AWS  Kinesis, Azure Event Hub</li>
+                            <li>Cloud based applications, including use of FaaS products such as AWS Lambda, Azure Functions Google Cloud Functions</li>
+                            <li>Data engineering - making implicit contracts in streaming data pipelines explicit, and ensuring contract enforcement between components</li>
+                            <li>High performance APIs with protocol buffers</li>
+                            <li>IoT - high volume messaging from sensors and devices</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h3>What languages does it support?</h3>
                             <hr class="question" />
                             <ul>
-                                <li>HTTP based API microservice architectures</li>
-                                <li>Event based architectures based on message queue and publish-subscribe, such as Kafka, AWS  Kinesis, Azure Event Hub</li>
-                                <li>Cloud based applications, including use of FaaS products such as AWS Lambda, Azure Functions Google Cloud Functions</li>
-                                <li>Data engineering - making implicit contracts in streaming data pipelines explicit, and ensuring contract enforcement between components</li>
-                                <li>High performance APIs with protocol buffers</li>
-                                <li>IoT - high volume messaging from sensors and devices</li>
+                                <li>JVM - Java / Kotlin / Groovy / Swift / Scala</li>
+                                <li>Ruby</li>
+                                <li>Golang</li>
+                                <li>NodeJS / JavaScript</li>
+                                <li>Python</li>
+                                <li>Objective-C / Swift</li>
+                                <li>.NET</li>
+                                <li>PHP</li>
                             </ul>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6">
-                                <h3>What languages does it support?</h3>
-                                <hr class="question" />
-                                <ul>
-                                    <li>JVM - Java / Kotlin / Groovy / Swift / Scala</li>
-                                    <li>Ruby</li>
-                                    <li>Golang</li>
-                                    <li>NodeJS / JavaScript</li>
-                                    <li>Python</li>
-                                    <li>Objective-C / Swift</li>
-                                    <li>.NET</li>
-                                    <li>PHP</li>
-                                </ul>
-                            </div>
-                    </div>
+                </div>
 
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
                         <div class="col-sm-6 col-md-6 col-lg-6">
                             <h3>Can I test cloud services such as Lambda, Kinesis?</h3>
                             <hr class="question" />
@@ -80,13 +81,24 @@ permalink: '/faq/'
                             <p>Yes - see above!</p>
                         </div>
                     </div>
+                <div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
                         <div class="col-sm-6 col-md-6 col-lg-6">
                             <h3>How does it work with Pact and Spring Cloud Contracts?</h3>
                             <hr class="question" />
                             <p>Pact and Spring Cloud Contracts are API contract-testing tools that produces contracts. Pactflow manages the lifecycle of these contracts, and provides a workflow to manage them in your continuous delivery pipelines.</p>
                         </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h3>Is it compatible with the Open Source Pact Broker?</h3>
+                            <hr class="question" />
+                            <p>
+                                    Yes, we a fully backwards compatible with the Open Source Pact Broker.
+                                    We contribute regularly to the Open Source roadmap, and generally release multiple updates a week to our customers.
+                                </p>
+                                <p>If you need help migrating from a self-hosted broker, please contact us at <a href="mailto:hello@pactflow.io">hello@pactflow.io</a></p>
+                        </div>
                     </div>
+                </div>
             </div>
             <div class="row">
                 <h2>Support</h2>
@@ -103,6 +115,37 @@ permalink: '/faq/'
                         <p>No. All credit card activity and information is handled by our third-party provider, Stripe. See Stripe’s Terms and Services.</p>
                     </div>
                 </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h3>How does the team plan work?</h3>
+                            <hr class="question" />
+                            <p>The Team plans use a <a href="https://en.wikipedia.org/wiki/Per-seat_license">"seat"</a> based model, where you purchase capacity for how many Users you need and assign them as required.</p>
+                            <p>A user is considered any person or system that requires independent access to the system. For example, if you have two team members Sally and Billy that will be logging into the UI, as well as a separate dedicated CI user for automation, they will each consume one seat for a total of 3.</p>
+                            <p>Each user gets a read-only and read-write API token that can be used for automation (e.g. for use in CI or local verification testing). Each user is able to rotate these tokens as needed.</p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h3>Can each team member see applications and integrations created by other users?</h3>
+                            <hr class="question" />
+                            <p>
+                                Yes. All users contribute to the same system, they are simply separately authenticated.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h3>What are the various authentication modes?</h3>
+                            <hr class="question" />
+                            <p>Users may login with their GitHub credentials (via OAuth2) or standard login (user/pass)</p>
+                            <p>For CLI automation, any user may also create API tokens for use by standard Pact Tooling</p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h3>Can I migrate my self-hosted Broker to Pactflow?</h3>
+                            <hr class="question" />
+                            <p>Yes you can. If you'd like to retain your historical data, contact us at <a href="mailto:hello@pactflow.io">hello@pactflow.io</a> and we'll help you through the process.</p>
+                        </div>
+                    </div>
             </div>
             <div class="row">
                 <h2>Security</h2>
