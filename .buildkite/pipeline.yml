@@ -10,6 +10,7 @@ steps:
     label: ':rocket: Deploy staging.pactflow.io'
     env:
       JEKYLL_ENV: dev
+      ENVIRONMENT: dev
     agents:
       queue: pact-dev
 
@@ -21,6 +22,7 @@ steps:
     label: ':rocket: Production Deploy - pactflow.io'
     env:
       JEKYLL_ENV: prod
+      ENVIRONMENT: prod
     agents:
       queue: pact-dev
 
