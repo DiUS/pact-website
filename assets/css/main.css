@@ -7804,3 +7804,7 @@ background-image: none;
 #solutions.serverless #feature-item-01 {
   margin-top: 0;
 }
+
+.doco-links {
+  padding-top: 24px;
+}
