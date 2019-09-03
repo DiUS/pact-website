@@ -202,8 +202,7 @@ permalink: '/faq/'
                     <div class="col-sm-6 col-md-6 col-lg-6">
                         <h3>How can we protect secrets we put into the Pact Broker required to get the webhooks to work?</h3>
                         <hr class="question" />
-                        <p>At the moment, webhook secrets are stored in our database in clear-text (as per the OSS version), however we do follow a number of standard security protocols for the hosted environment (see above).</p>
-                        <p>We currently suggest that any tokens in the broker are appropriately scoped in nature, and cycled as per standard security best practices. We have it on our roadmap to address this, however we can’t provide a timeline for this feature at this time.<p>
+                        <p>Use our <a href="http://blog.pactflow.io/secrets">Secrets</a> feature. All secrets are fully encrypted against a customer specific key.<p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
