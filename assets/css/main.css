@@ -2417,7 +2417,6 @@ position:relative;
 width:100%;
 top:0px;
 z-index:3;
-margin-top: 120px;
 filter: grayscale(100%);
 }
 #integrations .container{
@@ -7701,8 +7700,8 @@ transition: 0.3s all ease;
 } */
 
 .items-testimonials {
-
-  padding-bottom: 50px
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .pricing-content .button.multiple {
