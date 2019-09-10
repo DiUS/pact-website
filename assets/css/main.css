@@ -1133,7 +1133,6 @@ font-size: 6rem;
 #testimonials{
 position:relative;
 width:100%;
-top:-10px;
 z-index:3;
 }
 #testimonials .container{
@@ -1143,7 +1142,7 @@ margin-left: 0px;
 margin-right: 0px;
 }
 .cnt-testimonials-bg{
-padding: 0px 0px 100px 0px;
+padding: 0px 0px 20px 0px;
 }
 #testimonials .container h1{
 text-align: center;
@@ -7807,3 +7806,47 @@ background-image: none;
 .doco-links {
   padding-top: 24px;
 }
+
+p.normal {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  width: 60%;
+  margin: 20px auto;
+  color: #9f9f9f;
+}
+
+p.normal a{
+  text-decoration: underline
+}
+
+.btn {
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #000000;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #000000;
+  border: solid 1px #000000
+}
+.btn-outlined {
+  height: 60px;
+  line-height: 60px;
+  border-radius: 60px;
+  font-weight: 700;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+  font-size:1.2rem;
+  padding: 0 35px;
+  min-width: 250px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
