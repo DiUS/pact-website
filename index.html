@@ -4,17 +4,60 @@ title: Distributed systems testing made easy
 class: home
 ---
 
-    <section id="hero" class="hero-features">
+    <style type="text/css">
+        .hero {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding-top: 150px;
+            background-image: linear-gradient(to right, #0d868c, #5ac6cb);
+            padding-bottom: 40px;
+        }
+        .hero p, .hero h1 {
+            font-family: 'Open Sans Bold', sans-serif;
+            /*line-height: 3em;*/
+            /*font-size: 1.8rem;*/
+            font-weight: 100;
+        }
+
+        .hero h1 {
+            font-weight: 400;
+            font-size: 5rem;
+            padding-bottom: 1em;
+        }
+
+        .hero p {
+            font-size: 2rem;
+        }
+
+        .cnt-get-started {
+            padding-top: 2em;
+            padding-left: 0;
+        }
+    </style>
+
+    <section class="hero">
+        <div class="hero-words col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <h1>Simplify your API testing</h1>
+            <p>The first contract-testing platform for collaborating on and testing distributed systems</p>
+            <div class="cnt-get-started col-xs-12 col-sm-12 col-md-12 col-lg-12 action-started">
+                <a href="/pricing/" class="btn btn-outlined">Get started now for free</a>
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <img src="/assets/img/dashboard.png" alt="Screenshot of Pactflow landing page showing a list of contracts" style="width:400px">
+        </div>
+    </section>
+    <section id="hero" class="hero-features" style="display: none">
         <div id="img-back-features">
             <div class="cnt-header-bg">
                 <div class="hero-box">
                     <div class="container">
                         <div class="hero-text align-center">
-                            <h1>Simplify your contract testing with Pactflow</h1>
+                            <h1>Simplify your API testing with Pactflow</h1>
                             <p>The first contract-testing platform for collaborating on and testing distributed systems</p>
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 action-started">
                                 <a href="/pricing/" class="btn btn-outlined">Get started now for free</a>
-                                <p class="legend-trial mobile-hidden">Try Pactflow for FREE for 30 days</p>
                             </div>
                         </div>
                     </div>
@@ -24,7 +67,7 @@ class: home
         </div>
         <!-- //.img-back -->
     </section>
-    <div id="img-feature">
+    <div id="img-feature" style="display: none">
         <div class="cnt-imgfeature-bg">
             <div class="container">
                 <div class="row">
@@ -46,11 +89,11 @@ class: home
                         <div class="col-md-12 col-lg-12 items-testimonials">
                             <!-- item testimonial -->
                             <div class="col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10 item-testimonial">
-                                <div class="txt-testimonial">
-                                    <p>"In 2016, ITV fulfilled over a billion on-demand TV requests to our 17 million registered users across 27 platforms. Contract testing has become an essential tool in our development pipeline to ensure our various back end systems, APIs and third party clients smoothly integrate with each other. Using Pact we have eliminated the need for tightly coupled integration test environments in favour of isolated micro-services that can be tested and deployed independently"</p>
+                                <div class="cnt-testimonial-image">
+                                    <img src="/assets/img/itv-face.png" alt="Daniel Oades - ITV" class="img-responsive">
                                 </div>
-                                <div class="testimonial">
-                                    <img src="/assets/img/itv-face.png" alt="Daniel Oades - ITV" class="img-responsive" width="100" height="100">
+                                <div class="cnt-testimonial-text">
+                                    <p class="quote">"In 2016, ITV fulfilled over a billion on-demand TV requests to our 17 million registered users across 27 platforms. Using Pact we have eliminated the need for tightly coupled integration test environments in favour of isolated micro-services that can be tested and deployed independently"</p>
                                     <p class="name">Daniel Oades</p>
                                     <cite>Principal Developer In Test, ITV​</cite>
                                 </div>
