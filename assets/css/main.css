@@ -7850,3 +7850,37 @@ p.normal a{
   transition: .3s ease;
 }
 
+div.oss {
+    padding-bottom: 10em;
+}
+
+.oss p, .oss ul li{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #9f9f9f;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.oss-header p {
+    text-align: center;
+    padding: 2em;
+}
+
+.oss ul {
+width: 80%;
+margin: 0px auto;
+}
+
+.cnt-oss-image {
+    padding-top: 10px;
+}
+
+.oss li a {
+    text-decoration: underline;
+}
+
+.oss-try {
+    padding-top: 10em;
+}
