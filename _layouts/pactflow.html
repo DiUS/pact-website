@@ -2,9 +2,7 @@
 <html class="template-color-pact" lang="en">
   {% include head.html %}
   <body>
-    {% if jekyll.environment == "prod" %}
-      {% include google.html %}
-    {% endif %}
+    {% include google-body.html %}
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
