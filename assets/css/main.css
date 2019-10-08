@@ -2425,7 +2425,7 @@ margin-left: 0px;
 margin-right: 0px;
 }
 .cnt-integrations-bg{
-padding:0px 0px 50px 0px;
+padding:50px 0px 10px 0px;
 }
 #integrations h1{
 text-align: center;
@@ -2452,7 +2452,7 @@ margin-top: 5%;
 margin-left: 5%;
 }
 #integrations .tab-company > div {
-  min-height: 100px;
+  min-height: 50px;
 }
 
 #integrations img.company-style {
