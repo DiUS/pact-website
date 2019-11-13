@@ -22,7 +22,7 @@ steps:
       JEKYLL_ENV: dev
       ENVIRONMENT: dev
     agents:
-      queue: pact
+      queue: pact-prod
 
   - block: ":rocket: Release!"
 
@@ -46,5 +46,5 @@ steps:
       JEKYLL_ENV: prod
       ENVIRONMENT: prod
     agents:
-      queue: pact
+      queue: pact-prod
 
