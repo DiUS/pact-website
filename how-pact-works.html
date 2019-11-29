@@ -142,15 +142,18 @@ div.slide {
 
 <script type="text/javascript">
   var currentSlide = 1
+  var previousSlide = 1
 
   function next() {
     if(currentSlide < 4) {
+      previousSlide = currentSlide
       currentSlide = currentSlide + 1
     }
   }
 
   function previous() {
     if(currentSlide > 1) {
+      previousSlide = currentSlide
       currentSlide = currentSlide - 1
     }
   }
@@ -163,20 +166,22 @@ div.slide {
 
     $(".previous-button").click(function() {
       previous()
-      $(".slide").hide()
-      $(".slide").removeClass("current-slide")
-      $(".slide-" + currentSlide).show()
-      $(".slide-" + currentSlide).addClass("current-slide")
-      $(".current-slide img").attr('src', $(".current-slide img").attr('src'))
+      $(".slide-" + previousSlide).fadeOut('fast', function() {
+        $(".slide-" + currentSlide).fadeIn('fast')
+        $(".slide").removeClass("current-slide")
+        $(".slide-" + currentSlide).addClass("current-slide")
+        $(".current-slide img").attr('src', $(".current-slide img").attr('src'))
+      })
     })
 
     $(".next-button").click(function() {
       next()
-      $(".slide").hide()
-      $(".slide").removeClass("current-slide")
-      $(".slide-" + currentSlide).show()
-      $(".slide-"  + currentSlide).addClass("current-slide")
-      $(".current-slide img").attr('src', $(".current-slide img").attr('src'))
+      $(".slide-"  + previousSlide).fadeOut('fast', function() {
+        $(".slide").removeClass("current-slide")
+        $(".slide-" + currentSlide).fadeIn('fast')
+        $(".slide-"  + currentSlide).addClass("current-slide")
+        $(".current-slide img").attr('src', $(".current-slide img").attr('src'))
+      })
     })
   })
 </script>
