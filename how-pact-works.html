@@ -1,0 +1,187 @@
+---
+layout: pactflow
+title: How Pact Works
+permalink: '/how-pact-works/'
+signup: true
+---
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<style type="text/css">
+ul.no-style-list li {
+    list-style: none;
+}
+div.slide {
+  height: 600px;
+}
+</style>
+<section id="hero" class="hero-comparisonchart hero-pricing">
+        <div id="particles-js">
+                <div class="cnt-comparison-content">
+                    <div class="hero-box">
+                        <div class="container">
+                            <div class="hero-text align-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+<div class="container">
+    <section id="faq-1">
+        <div class="cnt-faq-bg">
+            <div class="container">
+                <h1>How pact works</h1>
+                <div class="row slide-1 slide current-slide">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h3>The problem with integration tests</h3>
+                                <hr class="question" />
+                                <p>Before we deploy an application to production, we need to make sure that it works correctly with the other applications with which it integrates. To do this, traditionally we run integration tests using "live", deployed applications.</p>
+
+                                <p>Integration tests give us:<p>
+
+                                <p>✅ confidence to deploy</p>
+
+                                <p>but<p>
+
+                                <p>
+                                    <ul class="no-style-list">
+                                        <li>❌ introduce dependencies</li>
+                                        <li>❌ are slow</li>
+                                        <li>❌ break easily</li>
+                                        <li>❌ require lots of maintenance</li>
+                                    </ul>
+                                </p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <img src="/assets/img/how_pact_works_1.gif" width="600"/>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row slide-2 slide" style="display:none">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h3>Why not use isolated tests?</h3>
+                                <hr class="question" />
+                                <p>By testing each side of an integration point using a mock or simulated version of the other application, we get two sets of tests which:</p>
+
+
+                                <ul class="list-style: none">
+                                  <li>✅ can be run independently</li>
+                                  <li>✅ are fast</li>
+                                  <li>✅ stable</li>
+                                  <li>✅ easy to maintain</li>
+                                </ul>
+
+                                <p>but</p>
+
+                                <p>❌ do not give us confidence to deploy.</p>
+
+                                <p>This is because there is nothing to ensure that the simulated applications behave the same way as the real ones.</p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <img src="/assets/img/how_pact_works_1.gif" width="600"/>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row slide-3 slide" style="display:none">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h3>How Pact helps - the consumer side</h3>
+                                <hr class="question" />
+                                <p>Pact solves the problem of keeping the two sets of tests in sync by use of a "contract", also known as a "pact".</p>
+                                <p>During the execution of the consumer tests, each request that is made to the mock provider is recorded into the pact file, along with its expected response.</p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h2>Image to come</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row slide-4 slide" style="display:none">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h3>How Pact helps - the provider side</h3>
+                                <hr class="question" />
+                                <p>The pact file is then taken over to the provider project. Each request is replayed against the real provider, and the actual response is compared to the expected response. If they match, we have proven that the simulated applications behave the same way as the real applications. </p>
+
+                                <p>This means that when these two applications interact in real life, they should work together correctly.</p>
+
+                                <p>Using Pact gives you tests that:</p>
+                                <ul class="list-style: none;">
+                                  <li>✅ can be run independently</li>
+                                  <li>✅ are fast</li>
+                                  <li>✅ stable</li>
+                                  <li>✅ easy to maintain</li>
+                                </ul>
+
+                                <p>and</p>
+
+                                <p>✅ confidence to deploy</p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <h2>Image to come</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row button" style="padding:30px">
+                    <div class="col-lg-12 center">
+                        <a class="btn btn-outlined previous-button">Previous</a>
+                        <a class="btn btn-outlined replay-button">Replay</a>
+                        <a class="btn btn-outlined next-button">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript">
+  var currentSlide = 1
+  var previousSlide = 1
+
+  function next() {
+    if(currentSlide < 4) {
+      previousSlide = currentSlide
+      currentSlide = currentSlide + 1
+    }
+  }
+
+  function previous() {
+    if(currentSlide > 1) {
+      previousSlide = currentSlide
+      currentSlide = currentSlide - 1
+    }
+  }
+
+
+  $(document).ready(function(){
+    $(".replay-button").click(function() {
+      $(".current-slide img").attr('src', $(".current-slide img").attr('src'))
+    })
+
+    $(".previous-button").click(function() {
+      previous()
+      $(".slide-" + previousSlide).fadeOut('fast', function() {
+        $(".slide-" + currentSlide).fadeIn('fast')
+        $(".slide").removeClass("current-slide")
+        $(".slide-" + currentSlide).addClass("current-slide")
+        $(".current-slide img").attr('src', $(".current-slide img").attr('src'))
+      })
+    })
+
+    $(".next-button").click(function() {
+      next()
+      $(".slide-"  + previousSlide).fadeOut('fast', function() {
+        $(".slide").removeClass("current-slide")
+        $(".slide-" + currentSlide).fadeIn('fast')
+        $(".slide-"  + currentSlide).addClass("current-slide")
+        $(".current-slide img").attr('src', $(".current-slide img").attr('src'))
+      })
+    })
+  })
+</script>
