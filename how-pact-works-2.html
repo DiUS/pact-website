@@ -56,7 +56,7 @@ div.slide {
                 <h1>How pact works</h1>
                 <div class="row slide-1 slide current-slide">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 slide-text-container">
                             <h3 class="slide-title">The problem with integration tests</h3>
                                 <hr class="question" />
                                 <p>Before we deploy an application to production, we need to make sure that it works correctly with the other applications with which it integrates. To do this, traditionally we run integration tests using "live", deployed applications.</p>
@@ -76,7 +76,7 @@ div.slide {
                                     </ul>
                                 </p>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 slide-image-container">
                             <img src="/assets/img/how_pact_works_with_pictures_1.gif" width="600"/>
                         </div>
                     </div>
@@ -84,7 +84,7 @@ div.slide {
                 </div>
                 <div class="row slide-2 slide" style="display:none">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 slide-text-container">
                             <h3 class="slide-title">Why not use isolated tests?</h3>
                                 <hr class="question" />
                                 <p>By testing each side of an integration point using a mock or simulated version of the other application, we get two sets of tests which:</p>
@@ -103,7 +103,7 @@ div.slide {
 
                                 <p>This is because there is nothing to ensure that the simulated applications behave the same way as the real ones.</p>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 slide-image-container">
                             <img src="/assets/img/how_pact_works_with_pictures_2.gif" width="600"/>
                         </div>
                     </div>
@@ -111,20 +111,20 @@ div.slide {
                 </div>
                 <div class="row slide-3 slide" style="display:none">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 slide-text-container">
                             <h3 class="slide-title">How Pact helps - the consumer side</h3>
                                 <hr class="question" />
                                 <p>Pact solves the problem of keeping the two sets of tests in sync by use of a "contract", also known as a "pact".</p>
                                 <p>During the execution of the consumer tests, each request that is made to the mock provider is recorded into the pact file, along with its expected response.</p>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 slide-image-container">
                             <h2>Animation to come - it will show the consumer making a request to the mock provider, and the request and response being recorded to the pact file</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row slide-4 slide" style="display:none">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 slide-text-container">
                             <h3 class="slide-title">How Pact helps - the provider side</h3>
                                 <hr class="question" />
                                 <p>The pact file is then taken over to the provider project. Each request is replayed against the real provider, and the actual response is compared to the expected response. If they match, we have verified that the simulated applications behave the same way as the real applications. </p>
@@ -143,20 +143,20 @@ div.slide {
 
                                 <p>✅ give you confidence to deploy</p>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 slide-image-container">
                             <h2>Animation to come - it will show the request being replayed against the real provider</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row slide-5 slide" style="display:none">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 slide-text-container">
                             <h3 class="slide-title">Where does Pactflow come in?</h3>
                                 <hr class="question" />
                                 <p>Pactflow is the hub that sits between the consumer and provider projects, allowing them to exchange pacts and verification results.</p>
                                 <p>It enables you build contract testing into your continous deployment/continuous integration pipelines, and ensure that your services are safe to deploy without lengthy and burdensome integration tests.</p>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 slide-image-container">
                             <h2>Animation to come - it will show the pact being published and retrieved from Pactflow</h2>
                         </div>
                     </div>
