@@ -14,7 +14,7 @@ ul.no-style-list li {
     list-style: none;
 }
 div.slide-row {
-  height: 570px;
+  height: 530px;
 }
 
 .circle {
@@ -166,14 +166,14 @@ img.slide-image {
                         <div class="slide-2 col-sm-5 col-md-5 col-lg-5 slide-text-container slide-hidden">
                             <h3 class="slide-title">Why not use isolated tests?</h3>
                                 <hr class="question" />
-                                <p>By testing each side of an integration point using a mock or simulated version of the other application, we get two sets of tests which:</p>
+                                <p>By testing each side of an integration point using a simulated version of the other application, we get two sets of tests which:</p>
 
 
                                 <ul class="no-style-list">
-                                  <li>✅ can be run independently</li>
+                                  <li>✅ can run independently</li>
                                   <li>✅ are fast</li>
-                                  <li>✅ stable</li>
-                                  <li>✅ easy to maintain</li>
+                                  <li>✅ are stable</li>
+                                  <li>✅ are easy to maintain</li>
                                 </ul>
 
                                 <p>but</p>
@@ -191,16 +191,14 @@ img.slide-image {
                         <div class="slide-4 col-sm-5 col-md-5 col-lg-5 slide-text-container slide-hidden">
                             <h3 class="slide-title">How Pact helps - the provider side</h3>
                                 <hr class="question" />
-                                <p>The pact file is then taken over to the provider project. Each request is replayed against the real provider, and the actual response is compared to the expected response. If they match, we have verified that the simulated applications behave the same way as the real applications. </p>
-
-                                <p>This means that when these two applications interact in real life, they should work together correctly.</p>
+                                <p>Each request in the contract is then replayed against the real provider, and the actual and expected responses are compared. If they match, we have verified that the simulated applications behave the same way as the real applications. This means that when these two applications interact in real life, they should work together correctly.</p>
 
                                 <p>Using Pact gives you tests that:</p>
                                 <ul class="no-style-list">
-                                  <li>✅ can be run independently</li>
+                                  <li>✅ can run independently</li>
                                   <li>✅ are fast</li>
-                                  <li>✅ stable</li>
-                                  <li>✅ easy to maintain</li>
+                                  <li>✅ are stable</li>
+                                  <li>✅ are easy to maintain</li>
                                 </ul>
 
                                 <p>and</p>
