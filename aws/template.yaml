@@ -48,6 +48,16 @@ Resources:
                         HTTPPort: '80'
                         HTTPSPort: '443'
                         OriginProtocolPolicy: http-only
+                CustomErrorResponses:
+                    - ErrorCode: 401
+                      ResponseCode: 404
+                      ResponsePagePath: /404/index.html
+                    - ErrorCode: 403
+                      ResponseCode: 404
+                      ResponsePagePath: /404/index.html
+                    - ErrorCode: 404
+                      ResponseCode: 404
+                      ResponsePagePath: /404/index.html
                 Enabled: 'true'
                 DefaultCacheBehavior:
                     ForwardedValues:
