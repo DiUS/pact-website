@@ -4,17 +4,14 @@ title: How Pact Works
 permalink: '/how-pact-works-2/'
 signup: true
 ---
-<script
-src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"></script>
+<script src="/assets/js/jquery.min.js"></script>
 
 <style type="text/css">
 ul.no-style-list li {
   list-style: none;
 }
 div.slide-row {
-  height: 530px;
+  height: 560px;
 }
 
 .circle {
@@ -53,6 +50,7 @@ div.slide-image h3 {
 
 #faq-1 .slide-text-container p {
   width: 100%;
+  font-size: 12pt;
 }
 
 #faq-1 .slide-text-container h3 {
@@ -64,7 +62,11 @@ div.slide-image h3 {
 }
 
 #faq-1 .slide-text-container ul {
-  margin-left: 0
+  margin-left: 5%;
+}
+
+#faq-1 .slide-text-container ul li {
+  font-size: 12pt;
 }
 
 .slide-text-container {
@@ -80,7 +82,9 @@ div.slide-image h3 {
 }
 
 .replay-cnt {
-  width:100%; text-align: right
+  width:100%;
+  text-align: right;
+  display: none;
 }
 
 .replay {
@@ -92,9 +96,29 @@ div.slide-image h3 {
   left: -13px
 }
 
+.replay-in-text {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 3px;
+}
+
 img.slide-image {
   width: 100%;
 }
+
+#faq-1 div.replay-in-text-cnt h3 {
+  margin-top: 20px;
+  cursor: pointer;
+  display: inline-block;
+  color: rgb(159, 159, 159);
+}
+
+#faq-1 div.replay-in-text-cnt img {
+  margin-right: 5px;
+}
+
 </style>
 <section id="hero" class="hero-comparisonchart hero-pricing">
   <div id="particles-js">
@@ -116,7 +140,7 @@ img.slide-image {
         <div class="row slide-row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
             <div class="col-sm-7 col-md-7 col-lg-7 slide-image-container slide-image slide-image-1 slide-image-current">
-              <img src="/assets/img/how_pact_works_with_pictures_1_looping.gif" class="slide-image"/>
+              <img src="/assets/img/how_pact_works_with_pictures_1.gif" class="slide-image"/>
               <h3>Testing a request between two deployed applications</h3>
             </div>
             <div class="col-sm-7 col-md-7 col-lg-7 slide-image-container slide-image slide-image-2 slide-hidden">
@@ -128,14 +152,14 @@ img.slide-image {
             </div>
             <div class="col-sm-7 col-md-7 col-lg-7 slide-image-container slide-image slide-image-3 slide-hidden">
               <img src="/assets/img/how_pact_works_with_pictures_3.gif" class="slide-image"/>
-              <h3>Testing a consumer using Pact</h3>
+              <h3>Testing a consumer using a Pact mock provider</h3>
               <div class="replay-cnt">
                 <img src="/assets/img/replay_rev.png" class="replay"/>
               </div>
             </div>
             <div class="col-sm-7 col-md-7 col-lg-7 slide-image-container slide-image slide-image-4 slide-hidden">
               <img src="/assets/img/how_pact_works_with_pictures_4.gif" class="slide-image"/>
-              <h3>Testing a provider using Pact</h3>
+              <h3>Testing a provider using a Pact simulated consumer</h3>
               <div class="replay-cnt">
                 <img src="/assets/img/replay_rev.png" class="replay"/>
               </div>
@@ -148,7 +172,7 @@ img.slide-image {
               <hr class="question" />
               <p>Before we deploy an application to production, we need to be sure works correctly with the other applications with which it integrates. To do this, traditionally we run integration tests using "live", deployed applications.</p>
 
-              <p>Integration tests:</p>
+              <p>Integration tests</p>
 
               <ul class="no-style-list">
                 <li>✅ give us confidence to deploy</li>
@@ -164,14 +188,17 @@ img.slide-image {
                   <li>❌ require lots of maintenance</li>
                 </ul>
               </p>
+              <div class="replay-in-text-cnt">
+                <img src="/assets/img/replay.png" class="replay-in-text"/><h3>Replay animation</h3>
+              </div>
             </div>
             <div class="slide-2 col-sm-5 col-md-5 col-lg-5 slide-text-container slide-hidden">
               <h3 class="slide-title">Why not use isolated tests?</h3>
               <hr class="question" />
-              <p>By testing each side of an integration point using a simulated version of the other application, we get two sets of tests which:</p>
+              <p>By testing each side of an integration point using a simulated version of the other application, we get two sets of tests which</p>
 
               <ul class="no-style-list">
-                <li>✅ can run independently</li>
+                <li>✅ run independently</li>
                 <li>✅ are fast</li>
                 <li>✅ are stable</li>
                 <li>✅ are easy to maintain</li>
@@ -184,21 +211,27 @@ img.slide-image {
               </ul>
 
               <p>This is because there is nothing to ensure that the simulated applications behave the same way as the real ones.</p>
+              <div class="replay-in-text-cnt">
+                <img src="/assets/img/replay.png" class="replay-in-text"/><h3>Replay animation</h3>
+              </div>
             </div>
             <div class="slide-3 col-sm-5 col-md-5 col-lg-5 slide-text-container slide-hidden">
               <h3 class="slide-title">How Pact helps - the consumer side</h3>
               <hr class="question" />
               <p>Pact solves the problem of keeping the two sets of tests in sync by use of a "contract", also known as a "pact".</p>
-              <p>During the consumer tests, each request made to the mock provider is recorded into the contract file, along with its expected response.</p>
+              <p>During the consumer tests, each request made to a Pact mock provider is recorded into the contract file, along with its expected response.</p>
+              <div class="replay-in-text-cnt">
+                <img src="/assets/img/replay.png" class="replay-in-text"/><h3>Replay animation</h3>
+              </div>
             </div>
             <div class="slide-4 col-sm-5 col-md-5 col-lg-5 slide-text-container slide-hidden">
               <h3 class="slide-title">How Pact helps - the provider side</h3>
               <hr class="question" />
-              <p>Each request in the contract is then replayed against the real provider, and the actual and expected responses are compared. If they match, we have verified that the simulated applications behave the same way as the real applications. This means that when these two applications interact in real life, they should work together correctly.</p>
+              <p>A Pact simulated consumer then replays each request against the real provider, and compares the actual and expected responses. If they match, we have verified that the simulated applications behave the same way as the real applications. This means the two real applications should communicate correctly when they interact in real life.</p>
 
-              <p>Using Pact gives you tests that:</p>
+              <p>Using Pact gives you tests that</p>
               <ul class="no-style-list">
-                <li>✅ can run independently</li>
+                <li>✅ run independently</li>
                 <li>✅ are fast</li>
                 <li>✅ are stable</li>
                 <li>✅ are easy to maintain</li>
@@ -209,12 +242,18 @@ img.slide-image {
               <ul class="no-style-list">
                 <li>✅ give you confidence to deploy</li>
               </ul>
+              <div class="replay-in-text-cnt">
+                <img src="/assets/img/replay.png" class="replay-in-text"/><h3>Replay animation</h3>
+              </div>
             </div>
             <div class="slide-5 col-sm-5 col-md-5 col-lg-5 slide-text-container slide-hidden">
               <h3 class="slide-title">Where does Pactflow come in?</h3>
               <hr class="question" />
               <p>Pactflow is the hub that sits between the consumer and provider projects, allowing them to exchange contracts and verification results.</p>
-              <p>It enables you to build contract testing into your continuous deployment/continuous integration pipelines, and ensure that your services are safe to deploy without lengthy and burdensome integration tests.</p>
+              <p>Pactflow enables you to build contract testing into your continuous deployment/continuous integration pipelines, and ensure that your services are safe to deploy without lengthy and burdensome integration tests.</p>
+              <div class="replay-in-text-cnt">
+                <img src="/assets/img/replay.png" class="replay-in-text"/><h3>Replay animation</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -313,6 +352,10 @@ $(document).ready(function(){
   })
 
   $(".replay").click(function() {
+    replay()
+  })
+
+  $(".replay-in-text-cnt").click(function() {
     replay()
   })
 
