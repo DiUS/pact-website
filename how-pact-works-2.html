@@ -45,6 +45,56 @@ div.slide-row {
 .slide-hidden {
     display: none;
 }
+
+div.slide-image h3 {
+  text-transform: none;
+  text-align: center;
+}
+
+#faq-1 .slide-text-container p {
+  width: 100%;
+}
+
+#faq-1 .slide-text-container h3 {
+  margin-left: 0
+}
+
+#faq-1 .slide-text-container hr {
+  margin-left: 0
+}
+
+#faq-1 .slide-text-container ul {
+  margin-left: 0
+}
+
+.slide-text-container {
+  padding-left: 0em;
+}
+
+.slide-image-container {
+  padding-right: 5em;
+}
+
+.circle {
+  cursor: pointer;
+}
+
+.replay-cnt {
+  width:100%; text-align: right
+}
+
+.replay {
+  cursor: pointer;
+  width:25px;
+  height: 25px;
+  position: relative;
+  top: -77px;
+  left: -13px
+}
+
+img.slide-image {
+  width: 100%;
+}
 </style>
 <section id="hero" class="hero-comparisonchart hero-pricing">
         <div id="particles-js">
@@ -65,20 +115,35 @@ div.slide-row {
                 <h1>How pact works</h1>
                 <div class="row slide-row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 questions-cnt">
-                        <div class="col-sm-6 col-md-6 col-lg-6 slide-image-container slide-image slide-image-1 slide-image-current">
-                            <img src="/assets/img/how_pact_works_with_pictures_1.gif" width="600px" />
+                        <div class="col-sm-7 col-md-7 col-lg-7 slide-image-container slide-image slide-image-1 slide-image-current">
+                            <img src="/assets/img/how_pact_works_with_pictures_1_looping.gif" class="slide-image"/>
+                            <h3>Testing a request between two deployed applications</h3>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6 slide-image-container slide-image slide-image-2 slide-hidden">
-                            <img src="/assets/img/how_pact_works_with_pictures_2.gif" width="600px" />
+                        <div class="col-sm-7 col-md-7 col-lg-7 slide-image-container slide-image slide-image-2 slide-hidden">
+                            <img src="/assets/img/how_pact_works_with_pictures_2.gif" class="slide-image"/>
+                            <h3>Testing a request using simulated applications</h3>
+                            <div class="replay-cnt">
+                              <img src="/assets/img/replay_rev.png" class="replay"/>
+                            </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6 slide-image-container slide-image slide-image-3 slide-hidden">
-                            <img src="/assets/img/how_pact_works_with_pictures_3.gif" width="600px" />
+                        <div class="col-sm-7 col-md-7 col-lg-7 slide-image-container slide-image slide-image-3 slide-hidden">
+                            <img src="/assets/img/how_pact_works_with_pictures_3.gif" class="slide-image"/>
+                            <h3>Testing a consumer using Pact</h3>
+                            <div class="replay-cnt">
+                              <img src="/assets/img/replay_rev.png" class="replay"/>
+                            </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6 slide-image-container slide-image slide-image-4 slide-hidden">
-                          <img src="/assets/img/how_pact_works_with_pictures_4.gif" width="600px" />
+                        <div class="col-sm-7 col-md-7 col-lg-7 slide-image-container slide-image slide-image-4 slide-hidden">
+                          <img src="/assets/img/how_pact_works_with_pictures_4.gif" class="slide-image"/>
+                          <h3>Testing a provider using Pact</h3>
+                          <div class="replay-cnt">
+                            <img src="/assets/img/replay_rev.png" class="replay"/>
+                          </div>
                         </div>
-
-                        <div class="slide-1 col-sm-6 col-md-6 col-lg-6 slide-text-container">
+                        <div class="col-sm-7 col-md-7 col-lg-7 slide-image-container slide-image slide-image-5 slide-hidden">
+                          <h3>Image to come</h3>
+                        </div>
+                        <div class="slide-1 col-sm-5 col-md-5 col-lg-5 slide-text-container">
                             <h3 class="slide-title">The problem with integration tests</h3>
                                 <hr class="question" />
                                 <p>Before we deploy an application to production, we need to make sure that it works correctly with the other applications with which it integrates. To do this, traditionally we run integration tests using "live", deployed applications.</p>
@@ -98,7 +163,7 @@ div.slide-row {
                                     </ul>
                                 </p>
                         </div>
-                        <div class="slide-2 col-sm-6 col-md-6 col-lg-6 slide-text-container slide-hidden">
+                        <div class="slide-2 col-sm-5 col-md-5 col-lg-5 slide-text-container slide-hidden">
                             <h3 class="slide-title">Why not use isolated tests?</h3>
                                 <hr class="question" />
                                 <p>By testing each side of an integration point using a mock or simulated version of the other application, we get two sets of tests which:</p>
@@ -117,13 +182,13 @@ div.slide-row {
 
                                 <p>This is because there is nothing to ensure that the simulated applications behave the same way as the real ones.</p>
                         </div>
-                        <div class="slide-3 col-sm-6 col-md-6 col-lg-6 slide-text-container slide-hidden">
+                        <div class="slide-3 col-sm-5 col-md-5 col-lg-5 slide-text-container slide-hidden">
                             <h3 class="slide-title">How Pact helps - the consumer side</h3>
                                 <hr class="question" />
                                 <p>Pact solves the problem of keeping the two sets of tests in sync by use of a "contract", also known as a "pact".</p>
                                 <p>During the execution of the consumer tests, each request that is made to the mock provider is recorded into the pact file, along with its expected response.</p>
                         </div>
-                        <div class="slide-4 col-sm-6 col-md-6 col-lg-6 slide-text-container slide-hidden">
+                        <div class="slide-4 col-sm-5 col-md-5 col-lg-5 slide-text-container slide-hidden">
                             <h3 class="slide-title">How Pact helps - the provider side</h3>
                                 <hr class="question" />
                                 <p>The pact file is then taken over to the provider project. Each request is replayed against the real provider, and the actual response is compared to the expected response. If they match, we have verified that the simulated applications behave the same way as the real applications. </p>
@@ -142,30 +207,26 @@ div.slide-row {
 
                                 <p>✅ give you confidence to deploy</p>
                         </div>
-                        <div class="slide-5 col-sm-6 col-md-6 col-lg-6 slide-text-container slide-hidden">
+                        <div class="slide-5 col-sm-5 col-md-5 col-lg-5 slide-text-container slide-hidden">
                             <h3 class="slide-title">Where does Pactflow come in?</h3>
                                 <hr class="question" />
                                 <p>Pactflow is the hub that sits between the consumer and provider projects, allowing them to exchange pacts and verification results.</p>
-                                <p>It enables you build contract testing into your continous deployment/continuous integration pipelines, and ensure that your services are safe to deploy without lengthy and burdensome integration tests.</p>
+                                <p>It enables you to build contract testing into your continous deployment/continuous integration pipelines, and ensure that your services are safe to deploy without lengthy and burdensome integration tests.</p>
                         </div>
                     </div>
-
-
                 </div>
 
                 <div class="row button">
                   <div class="col-lg-12 center">
-                    <div class="circle circle-filled circle-1"></div>
-                    <div class="circle circle-2"></div>
-                    <div class="circle circle-3"></div>
-                    <div class="circle circle-4"></div>
-                    <div class="circle circle-5"></div>
+                    <div class="circle circle-filled circle-1" data-circle-number="1"></div>
+                    <div class="circle circle-2" data-circle-number="2"></div>
+                    <div class="circle circle-3" data-circle-number="3"></div>
+                    <div class="circle circle-4" data-circle-number="4"></div>
                   </div>
                 </div>
                 <div class="row button" style="padding:30px">
                     <div class="col-lg-12 center">
                         <a class="btn btn-outlined previous-button">Previous</a>
-                        <a class="btn btn-outlined replay-button">Replay</a>
                         <a class="btn btn-outlined next-button">Next</a>
                     </div>
                 </div>
@@ -179,7 +240,7 @@ div.slide-row {
   var previousSlideNo = 0
 
   function next() {
-    if (currentSlideNo < 5) {
+    if (currentSlideNo < 4) {
       previousSlideNo = currentSlideNo
       currentSlideNo = currentSlideNo + 1
     }
@@ -190,6 +251,11 @@ div.slide-row {
       previousSlideNo = currentSlideNo
       currentSlideNo = currentSlideNo - 1
     }
+  }
+
+  function goTo(slideNo) {
+    previousSlideNo = currentSlideNo
+    currentSlideNo = slideNo
   }
 
   function slideTextDiv(slideNumber) {
@@ -205,7 +271,7 @@ div.slide-row {
   }
 
   function nextImage() {
-    return $(".slide-image-" + currentSlideNo)
+    return $("div.slide-image-" + currentSlideNo)
   }
 
   function updateCircles() {
@@ -215,10 +281,10 @@ div.slide-row {
   }
 
   function replay() {
-    const src = $(".slide-image-" + currentSlideNo + " img").attr("src")
+    const src = $(".slide-image-" + currentSlideNo + " img.slide-image").attr("src")
     console.log("setting ",$(".slide-image-" + currentSlideNo + " img"), " to " , src)
-    $(".slide-image-" + currentSlideNo + " img").attr('src', '')
-    $(".slide-image-" + currentSlideNo + " img").attr('src', src)
+    $(".slide-image-" + currentSlideNo + " img.slide-image").attr('src', '')
+    $(".slide-image-" + currentSlideNo + " img.slide-image").attr('src', src)
   }
 
   function transition() {
@@ -226,8 +292,8 @@ div.slide-row {
       previousSlide().removeClass("current-slide")
       nextSlide().fadeIn('fast')
       nextSlide().addClass("current-slide")
-      $(".slide-image").addClass("slide-hidden")
-      $(".slide-image").removeClass("slide-image-current")
+      $("div.slide-image").addClass("slide-hidden")
+      $("div.slide-image").removeClass("slide-image-current")
       nextImage().removeClass("slide-hidden")
       nextImage().addClass("slide-image-current")
 
@@ -242,6 +308,10 @@ div.slide-row {
       replay()
     })
 
+    $(".replay").click(function() {
+      replay()
+    })
+
     $(".previous-button").click(function() {
       previous()
       transition()
@@ -249,6 +319,11 @@ div.slide-row {
 
     $(".next-button").click(function() {
       next()
+      transition()
+    })
+
+    $(".circle").click(function() {
+      goTo($(this).data('circle-number'))
       transition()
     })
   })
