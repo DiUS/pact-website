@@ -165,12 +165,19 @@ img.slide-image {
               </div>
             </div>
             <div class="col-sm-7 col-md-7 col-lg-7 slide-image-container slide-image slide-image-5 slide-hidden">
+              <img src="/assets/img/how_pact_works_with_pictures_5.png" class="slide-image"/>
+              <h3>Testing a request with Pact</h3>
+              <div class="replay-cnt">
+                <img src="/assets/img/replay_rev.png" class="replay"/>
+              </div>
+            </div>
+            <div class="col-sm-7 col-md-7 col-lg-7 slide-image-container slide-image slide-image-6 slide-hidden">
               <h3>Image to come</h3>
             </div>
             <div class="slide-1 col-sm-5 col-md-5 col-lg-5 slide-text-container">
               <h3 class="slide-title">The problem with integration tests</h3>
               <hr class="question" />
-              <p>Before we deploy an application to production, we need to be sure works correctly with the other applications with which it integrates. To do this, traditionally we run integration tests using "live", deployed applications.</p>
+              <p>Before we deploy an application to production, we need to be sure it works correctly with the other applications with which it integrates. To do this, traditionally we run integration tests using "live", deployed applications.</p>
 
               <p>Integration tests</p>
 
@@ -228,6 +235,11 @@ img.slide-image {
               <h3 class="slide-title">How Pact helps - the provider side</h3>
               <hr class="question" />
               <p>A Pact simulated consumer then replays each request against the real provider, and compares the actual and expected responses. If they match, we have verified that the simulated applications behave the same way as the real applications. This means the two real applications should communicate correctly when they interact in real life.</p>
+              <div class="replay-in-text-cnt">
+                <img src="/assets/img/replay.png" class="replay-in-text"/><h3>Replay animation</h3>
+              </div>
+            </div>
+            <div class="slide-5 col-sm-5 col-md-5 col-lg-5 slide-text-container slide-hidden">
 
               <p>Using Pact gives you tests that</p>
               <ul class="no-style-list">
@@ -242,11 +254,8 @@ img.slide-image {
               <ul class="no-style-list">
                 <li>✅ give you confidence to deploy</li>
               </ul>
-              <div class="replay-in-text-cnt">
-                <img src="/assets/img/replay.png" class="replay-in-text"/><h3>Replay animation</h3>
-              </div>
             </div>
-            <div class="slide-5 col-sm-5 col-md-5 col-lg-5 slide-text-container slide-hidden">
+            <div class="slide-6 col-sm-5 col-md-5 col-lg-5 slide-text-container slide-hidden">
               <h3 class="slide-title">Where does Pactflow come in?</h3>
               <hr class="question" />
               <p>Pactflow is the hub that sits between the consumer and provider projects, allowing them to exchange contracts and verification results.</p>
@@ -265,6 +274,7 @@ img.slide-image {
             <div class="circle circle-3" data-circle-number="3"></div>
             <div class="circle circle-4" data-circle-number="4"></div>
             <div class="circle circle-5" data-circle-number="5"></div>
+            <div class="circle circle-6" data-circle-number="6"></div>
           </div>
         </div>
         <div class="row button" style="padding:30px">
@@ -283,7 +293,7 @@ img.slide-image {
   var previousSlideNo = 0
 
   function next() {
-    if (currentSlideNo < 5) {
+    if (currentSlideNo < 6) {
       previousSlideNo = currentSlideNo
       currentSlideNo = currentSlideNo + 1
     }
