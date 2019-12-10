@@ -30,7 +30,7 @@ docker run --rm \
     -e AWS_SESSION_TOKEN \
     -e AWS_PROFILE \
     -e AWS_DEFAULT_REGION \
-    ${STACKUP_DOCKER_IMAGE} "${STACK_NAME}" up -t ${TEMPLATE} \
+    ${STACKUP_DOCKER_IMAGE} "${STACK_NAME}" up -t aws/${TEMPLATE} \
     -o S3Bucket=${S3BUCKET_NAME} \
     -o HostName=${HOST_NAME} \
     -o Environment=${ENVIRONMENT}
