@@ -31,7 +31,8 @@ docker run --rm \
     -e AWS_PROFILE \
     -e AWS_DEFAULT_REGION \
     ${STACKUP_DOCKER_IMAGE} "${STACK_NAME}" up -t ${TEMPLATE} \
-    -p parameters.${ENVIRONMENT}.yml \
+    -o S3Bucket=${S3BUCKET_NAME} \
+    -o HostName=${HOST_NAME} \
     -o Environment=${ENVIRONMENT}
 
 log "Done."

@@ -10,6 +10,9 @@ Parameters:
     Description: HostedZone to attach the domain to
     Type: String
     Default: Z2KANQBPTUQA1W #pactflow.io
+  S3Bucket:
+    Description: S3 Bucket to host the website
+    Type: String
   HostName:
     Description: Domain name to host the website on
     Type: String
@@ -24,7 +27,7 @@ Resources:
         Type: AWS::S3::Bucket
         Properties:
            AccessControl: PublicRead
-           BucketName: !Ref HostName
+           BucketName: !Ref S3Bucket
            WebsiteConfiguration:
               ErrorDocument: 404.html
               IndexDocument: index.html
