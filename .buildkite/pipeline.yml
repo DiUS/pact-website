@@ -23,8 +23,8 @@ steps:
       ./shell/deploy.sh
     label: ':rocket: Deploy staging-www.pactflow.io'
     env:
-      JEKYLL_ENV: dev
-      ENVIRONMENT: dev
+      JEKYLL_ENV: staging
+      ENVIRONMENT: staging
       S3BUCKET_NAME: www.staging.pactflow.io
       HOST_NAME: staging.pactflow.io
     agents:
@@ -38,7 +38,7 @@ steps:
       ./shell/deploy.sh
     label: ':rocket: Production Deploy - pactflow.io'
     env:
-      JEKYLL_ENV: prod
+      JEKYLL_ENV: production
       ENVIRONMENT: prod
       S3BUCKET_NAME: pactflow.io
       HOST_NAME: pactflow.io
@@ -53,7 +53,7 @@ steps:
       ./shell/deploy.sh
     label: ':rocket: Production Deploy - www.pactflow.io'
     env:
-      JEKYLL_ENV: prod
+      JEKYLL_ENV: production
       ENVIRONMENT: prod
       S3BUCKET_NAME: www.pactflow.io
       HOST_NAME: pactflow.io
