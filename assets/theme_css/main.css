@@ -401,7 +401,7 @@ width: 100%;
 display: none;
 }
 .video:before {
-background: url("http://placehold.it/1920x1080");
+background: url("https://placehold.it/1920x1080");
 }
 
 .featured-bg-image {
@@ -1215,7 +1215,7 @@ top: 0;
 width: 100%;
 height: 100%;
 z-index: -1;
-background-image: url('http://placehold.it/1920x1080');
+background-image: url('https://placehold.it/1920x1080');
 background-repeat: no-repeat;
 background-position: 50% 0;
 -ms-background-size: cover;
@@ -1568,7 +1568,7 @@ z-index:3;
 
 }
 .get-quote:before {
-background: url("http://placehold.it/1920x1080");
+background: url("https://placehold.it/1920x1080");
 }
 .img-bg-quote {
 position: relative;
@@ -1662,7 +1662,7 @@ opacity: 0.8;
 }
 .hero-about .cnt-header-bg{
 padding:0px 0px 450px 0px;
-background: url('http://placehold.it/1920x1080');
+background: url('https://placehold.it/1920x1080');
 background-size: cover;
 background-attachment: fixed;
 top: 0;
@@ -5679,7 +5679,7 @@ top: 0;
 width: 100%;
 height: 100%;
 z-index: -1;
-background-image: url('http://placehold.it/1920x1080');
+background-image: url('https://placehold.it/1920x1080');
 background-repeat: no-repeat;
 background-position: 50% 0;
 -ms-background-size: cover;
@@ -6067,7 +6067,7 @@ top: 0;
 width: 100%;
 height: 100%;
 z-index: -1;
-background-image: url('http://placehold.it/1920x1080');
+background-image: url('https://placehold.it/1920x1080');
 background-repeat: no-repeat;
 background-position: 50% 0;
 -ms-background-size: cover;
@@ -6264,7 +6264,7 @@ opacity: 0.8;
 .hero-careers .cnt-header-bg{
 padding:0px 0px 400px 0px;
 background-size:cover;
-background-image: url('http://placehold.it/1920x1080');
+background-image: url('https://placehold.it/1920x1080');
 -ms-background-size: cover;
 -o-background-size: cover;
 -moz-background-size: cover;
