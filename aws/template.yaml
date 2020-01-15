@@ -72,27 +72,27 @@ Resources:
                     AcmCertificateArn: !Ref WebsiteCertificate
                     SslSupportMethod: sni-only
 
-    OriginRecord:
-      Type: AWS::Route53::RecordSet
-      Properties:
-          AliasTarget:
-            DNSName: !GetAtt WebsiteDistribution.DomainName
-            HostedZoneId: Z2FDTNDATAQYW2
-          HostedZoneId: !Ref 'HostedZone'
-          Comment: DNS name for my instance.
-          Name: !Ref HostName
-          Type: A
+    # OriginRecord:
+    #   Type: AWS::Route53::RecordSet
+    #   Properties:
+    #       AliasTarget:
+    #         DNSName: !GetAtt WebsiteDistribution.DomainName
+    #         HostedZoneId: Z2FDTNDATAQYW2
+    #       HostedZoneId: !Ref 'HostedZone'
+    #       Comment: DNS name for my instance.
+    #       Name: !Ref HostName
+    #       Type: A
 
-    WWWRecord:
-      Type: AWS::Route53::RecordSet
-      Properties:
-          AliasTarget:
-            DNSName: !GetAtt WebsiteDistribution.DomainName
-            HostedZoneId: Z2FDTNDATAQYW2
-          HostedZoneId: !Ref 'HostedZone'
-          Comment: DNS name for my instance.
-          Name: !Sub "www.${HostName}"
-          Type: A
+    # WWWRecord:
+    #   Type: AWS::Route53::RecordSet
+    #   Properties:
+    #       AliasTarget:
+    #         DNSName: !GetAtt WebsiteDistribution.DomainName
+    #         HostedZoneId: Z2FDTNDATAQYW2
+    #       HostedZoneId: !Ref 'HostedZone'
+    #       Comment: DNS name for my instance.
+    #       Name: !Sub "www.${HostName}"
+    #       Type: A
 
 Outputs:
   CertificateArn:
