@@ -1,0 +1,40 @@
+<script type="text/javascript">
+  function receiveConsent() {
+    document.cookie = 'gdprconsent=true'
+    $('#gdprconsent').hide()
+  }
+  function hasConsented() {
+    return (document.cookie.split(';').filter((item) => item.includes('gdprconsent=true')).length)
+  }
+
+  $(document).ready(function() {
+    if (!hasConsented()) {
+      $('#gdprconsent').show()
+    }
+
+    $('#gdprconsentbtn').on("click", () => {
+      receiveConsent()
+    })
+  });
+</script>
+
+<div class="container" id="gdprconsent">
+  <div class="cc-banner row">
+    <div class="col-xs-8">
+      <div class="cc-text"><i class="fa fa-info-circle"></i> Like any modern website, this website uses cookies. <a
+          aria-label="learn more about cookies"
+          href="/privacy"
+          rel="noopener noreferrer nofollow"
+          target="_blank"
+          >Learn more</a
+        ></div>
+    </div>
+    <div class="col-xs-4">
+      <div class="cc-compliance">
+        <a id="gdprconsentbtn"
+          aria-label="dismiss cookie message"
+          class="cc-btn">Got it!</a>
+      </div>
+    </div>
+  </div>
+</div>

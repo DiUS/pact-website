@@ -25,6 +25,7 @@ Version: 1.0.0
 1.9 - Subscribe
 1.10 - Google Map
 1.11 - Footer
+1.12 - Cookie Consent
 
 2# Features
 
@@ -1861,6 +1862,62 @@ min-width: 250px;
 #sblog .btn-outlined:hover{
 color: #fff;
 }
+
+/* 1.12 Cookie Consent */
+#gdprconsent.container {
+  width: 100%;
+  padding: 0;
+  position: fixed;
+  bottom: 0em;
+  background-color: #5dded8;
+  display: none;
+  z-index:1000000;
+  border: 3px solid #fff;
+}
+.cc-banner{
+  z-index:1000001;
+  padding: 25px;
+  background-color: #5dded8;
+  font-family: 'Montserrat',sans-serif;
+}
+.cc-text {
+  margin-top: 10px;
+}
+.cc-text a {
+  text-decoration: underline;
+}
+.cc-banner .cc-compliance{
+position: relative;
+text-align: right;
+padding: 0px;
+}
+.cc-banner .cc-btn{
+text-overflow: ellipsis;
+vertical-align: middle;
+display: inline-block;
+white-space: nowrap;
+overflow: hidden;
+text-align: center;
+}
+.cc-banner .cc-btn:hover{
+background: #34495e;
+}
+.cc-banner .cc-btn{
+color:#fff;
+height: 35px;
+line-height: 35px;
+border: 1px solid #fff;
+border-radius: 60px;
+font-weight: 700;
+font-family: 'Montserrat',sans-serif;
+text-transform: uppercase;
+font-size:1.2rem;
+padding: 0 35px;
+min-width: 130px;
+text-decoration: none;
+cursor: pointer;
+}
+
 /**
 * ===================================================================
 * footer
